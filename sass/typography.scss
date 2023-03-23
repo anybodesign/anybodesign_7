@@ -208,10 +208,10 @@ textarea, input, video {
 // Lists
 
 ul, ol {
-	padding-left: $grid-padding*2;
+	padding-left: 2rem;
 	
 	.page-content > & {
-		padding-left: $grid-padding*3;
+		padding-left: 3rem;
 	}
 }
 
@@ -250,7 +250,7 @@ img {
 
 figure {
 	position: relative;
-	margin: 0 0 $grid-padding 0;
+	margin: 0 0 1rem 0;
 	overflow: hidden;
 	
 	img {
@@ -320,7 +320,7 @@ figure {
 figcaption {
 	font-size: 1.3rem; 
 	line-height: 1;
-	margin: $grid-padding 0;
+	margin: 1rem 0;
 }
 
 
@@ -336,11 +336,11 @@ blockquote {
 		border-left: var(--accent_color) 3px solid;
 		position: absolute;
 		top: 0;
-		left: $grid-padding;
+		left: 1rem;
 	}
 	
 	.page-content > & {
-		padding: $grid-padding*2 $grid-padding*4;
+		padding: 2rem 4rem;
 		
 		@include rwd(large) {
 			padding-right: 8.3333%;
@@ -361,7 +361,7 @@ cite {
 	display: block;
 	font-family: var(--font_regular);
 	font-style: normal;
-	margin-top: $grid-padding;
+	margin-top: 1rem;
 	font-size: 85%;
 }
 
@@ -399,7 +399,7 @@ sup {
 // 
 // table {
 //     width: 100%;
-//     margin-bottom: $grid-padding*2;
+//     margin-bottom: 2rem;
 // }
 // thead {
 // 	background-color: var(--primary_color);
@@ -412,7 +412,7 @@ sup {
 // td, th {
 // 	vertical-align: middle;
 // 	margin-bottom: 0;
-// 	padding: $grid-padding;
+// 	padding: 1rem;
 // 	border: var(--primary_color) 1px solid;
 // 	
 // 	thead + tbody &, 
@@ -457,12 +457,12 @@ pre {
 	white-space: pre-line;
 	
 	.page-content > & {
-		padding: $grid-padding;
-		width: calc(100% - #{$grid-padding}*2);
+		padding: 1rem;
+		width: calc(100% - #{1rem}*2);
 	}
 }
 mark {
-	padding: $grid-padding;
+	padding: 1rem;
 	background: rgba(255, 255, 0, .9); // Transparent yellow
 }
 
@@ -476,11 +476,11 @@ mark {
 }
 .alignleft {
 	float: left;
-	margin-right: $grid-padding*2;
+	margin-right: 2rem;
 }
 .alignright {
 	float: right;
-	margin-left: $grid-padding*2;
+	margin-left: 2rem;
 }
 .aligncenter {
 	display: block; 

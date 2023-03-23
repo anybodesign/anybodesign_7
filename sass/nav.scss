@@ -13,7 +13,7 @@
 	a {
 		position: fixed; 
 		top: -6.5rem;
-		padding: $grid-padding;
+		padding: 1rem;
 		background-color: var(--text_color);
 		font-family: var(--font_bold);
 		color: #fff;
@@ -44,12 +44,12 @@
 	
 	& > li {
 		font-size: 1.4rem;
-		margin-left: $grid-padding;
+		margin-left: 1rem;
 		
 		@include rwd(medium) {
 			.has-search & {
 				margin-left: 0;
-				margin-right: $grid-padding;
+				margin-right: 1rem;
 			}
 		}
 		
@@ -67,7 +67,7 @@
 	top: auto; 
 	left: 0;
 	width: 100%;
-	padding: $grid-padding;
+	padding: 1rem;
 	background-color: #fff;
 	
 	transform: translateX(-110%);
@@ -103,16 +103,16 @@
 		display: block;
 		
 		@include rwd(large) {
-			margin-left: $grid-padding;
+			margin-left: 1rem;
 		}
 		@include rwd(wide) {
-			margin-left: $grid-padding*2;
+			margin-left: 2rem;
 		}
 		
 		& > a {
 			position: relative;
 			display: block;
-			padding: $grid-padding 0;
+			padding: 1rem 0;
 			transition: .2s ease-in-out;
 			text-decoration: none;
 			
@@ -129,7 +129,7 @@
 			}
 			
 			@include rwd(large) {
-				padding: $grid-padding;
+				padding: 1rem;
 				
 				&::after {
 					width: 0;
@@ -143,7 +143,7 @@
 		&.current-menu-item > a,
 		&.current_page_parent > a {
 			background-color: var(--accent_color);
-			padding-left: $grid-padding;
+			padding-left: 1rem;
 			
 			.high-contrast & {
 				color: #fff;
@@ -180,7 +180,7 @@
 				padding-right: 2.4rem;
 				
 				@include rwd(wide) {
-					padding-right: $grid-padding;
+					padding-right: 1rem;
 				}
 			}
 		
@@ -270,8 +270,8 @@
 		
 		a {
 			display: block;
-			padding: $grid-padding 0;
-			padding-left: $grid-padding;
+			padding: 1rem 0;
+			padding-left: 1rem;
 			text-decoration: none;
 			transition: .2s ease-in-out;
 			
@@ -281,7 +281,7 @@
 			}
 			
 			@include rwd(large) {
-				padding: $grid-padding/2 $grid-padding;
+				padding: .5rem 1rem;
 			}
 		}
 		a:hover, 
@@ -352,7 +352,7 @@
 		
 		@include rwd(large) {
 			top: 1rem; 
-			width: $grid-padding;
+			width: 1rem;
 			border-top-width: 1px; 
 		}
 	}
@@ -496,7 +496,7 @@
 #sidebar_toggle {
 	position: absolute;
 	top: auto;
-	right: $grid-padding;
+	right: 1rem;
 	transform: translateY(-125%);
 	background-color: #fff;
 	z-index: 90;
@@ -510,7 +510,7 @@
 
 .breadcrumbs-nav {
 	position: relative;
-	margin-bottom: $grid-padding;
+	margin-bottom: 1rem;
 	
 	&::before {
 		content: '';
@@ -526,7 +526,7 @@
 	}
 	
 	.inner {
-		padding: $grid-padding;
+		padding: 1rem;
 		padding-right: 7rem;
 		
 		overflow: hidden;
@@ -534,7 +534,7 @@
 		white-space: nowrap;
 		
 		@include rwd(large) {
-			padding-right: $grid-padding;
+			padding-right: 1rem;
 		}
 	}
 	
@@ -559,7 +559,7 @@
 	flex-wrap: wrap;
 	
 	& > li {
-		margin-right: $grid-padding*1.5;
+		margin-right: 1rem*1.5;
 		
 		a {
 			@include link-style();	
@@ -590,7 +590,7 @@
 			
 			a {
 				display: block;
-				padding: $grid-padding 0;
+				padding: 1rem 0;
 				text-decoration: none;
 				border-bottom: var(--text_color) 1px solid;
 				transition: .2s ease-in-out;
@@ -613,7 +613,7 @@
 			
 			&.recentcomments {
 				display: block;
-				padding: $grid-padding 0;
+				padding: 1rem 0;
 			}
 		}
 	}
@@ -627,7 +627,7 @@
 	align-items: center;
 	
 	& > li {
-		margin-right: $grid-padding;
+		margin-right: 1rem;
 		
 		a {
 			display: block;
@@ -640,7 +640,7 @@
 			
 			&:focus,
 			&:hover {
-				transform: translateY(-$grid-padding/2);
+				transform: translateY(-.5rem);
 			}
 		}
 	}
@@ -651,9 +651,9 @@
 .share-box {
 	
 	p {
-		padding-bottom: $grid-padding/2;
+		padding-bottom: .5rem;
 		border-bottom: var(--text_color) 1px solid;
-		margin-bottom: $grid-padding;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -664,7 +664,7 @@
 	
 	& > li {
 		display: block;
-		margin-right: $grid-padding;
+		margin-right: 1rem;
 		
 		img {
 			display: block;
@@ -676,7 +676,7 @@
 			&:hover,
 			&:focus {
 				img {
-					transform: translateY(-$grid-padding/2);
+					transform: translateY(-.5rem);
 				}
 			}
 		}

@@ -11,15 +11,15 @@
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;
-		padding-bottom: $grid-padding*2;
+		padding-bottom: 2rem;
 		
 		&::after {
 			content: '';
 			display: block;
 			border-bottom: var(--text_color) 1px solid;
-			width: calc(100% - #{$grid-padding}*2);
+			width: calc(100% - #{1rem}*2);
 			position: absolute;
-			left: $grid-padding;
+			left: 1rem;
 			bottom: 0;
 			
 			.banner-has-bg & {
@@ -44,8 +44,8 @@
 .site-toolbar {
 	position: relative;
 	width: 100%;
-	padding: $grid-padding;
-	margin-bottom: $grid-padding*2;
+	padding: 1rem;
+	margin-bottom: 2rem;
 
 	&.has-search {
 		display: flex;
@@ -66,8 +66,8 @@
 }
 
 .site-brand {
-	padding: $grid-padding;
-	margin-top: $grid-padding*2;
+	padding: 1rem;
+	margin-top: 2rem;
 	
 	.site-toolbar + & {
 		margin-top: 0;
@@ -82,8 +82,8 @@
 }
 
 .site-nav {
-	padding: $grid-padding;
-	margin-top: $grid-padding*2;
+	padding: 1rem;
+	margin-top: 2rem;
 	
 	.site-toolbar + .site-brand + & {
 		margin-top: 0;

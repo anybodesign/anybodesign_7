@@ -137,7 +137,7 @@
 		display: flex;
 
 		.wp-block-column {
-			margin: 0 $grid-padding;
+			margin: 0 1rem;
 
 			&:first-child {
 				margin-left: 0;
@@ -189,7 +189,7 @@
 // Quotes
 
 .wp-block-quote {
-	margin-bottom: $grid-padding*2 !important;
+	margin-bottom: 2rem !important;
 	
 	cite {
 		
@@ -204,7 +204,7 @@
 .wp-block-latest-posts__list {
 	
 	.page-content > & {
-		padding-left: $grid-padding;
+		padding-left: 1rem;
 	}	
 	
 	li {
@@ -216,14 +216,14 @@
 		}
 			
 		a {
-			padding: $grid-padding 0;
+			padding: 1rem 0;
 			text-decoration: none;
 			transition: .2s ease-in-out;
 			
 			&:hover,
 			&:focus {
-				padding-left: $grid-padding;
-				padding-right: $grid-padding;
+				padding-left: 1rem;
+				padding-right: 1rem;
 				background-color: var(--primary_color);
 				color: #fff;
 			}
@@ -268,11 +268,11 @@ hr {
 	border-top: var(--text_color) 1px solid;
 	
 	.page-content & {
-		width: calc(100% - #{$grid-padding*4});
-		margin: $grid-padding*5 auto;
+		width: calc(100% - #{4rem});
+		margin: 5rem auto;
 		
 		@include rwd(large) {
-			max-width: calc(#{$max-width} - #{$grid-padding*4});
+			max-width: calc(#{$max-width} - #{4rem});
 		}
 	}
 }
@@ -326,26 +326,26 @@ hr {
 .wp-block-media-text {
 	
 	.wp-block-media-text__content {
-		padding: $grid-padding 0;
+		padding: 1rem 0;
 		
 		@include rwd(smallmedium) {
-			padding: $grid-padding;
+			padding: 1rem;
 			padding-right: 0;
 		}
 		@include rwd(large) {
-			padding: $grid-padding*2;
+			padding: 2rem;
 		}
 	}
 	
 	&.has-media-on-the-right {
 		.wp-block-media-text__content {
 			@include rwd(smallmedium) {
-				padding: $grid-padding;
+				padding: 1rem;
 				padding-left: 0;
-				padding-right: $grid-padding;
+				padding-right: 1rem;
 			}
 			@include rwd(large) {
-				padding: $grid-padding*2;
+				padding: 2rem;
 			}
 		}
 	}
@@ -355,13 +355,13 @@ hr {
 
 .wp-block-gallery {
 	.page-content > & {
-		padding-left: $grid-padding;
+		padding-left: 1rem;
 	}
 	
 	.blocks-gallery-image,
 	.blocks-gallery-item { 
 		figcaption {
-			padding: $grid-padding;
+			padding: 1rem;
 			background-color: var(--text_color);
 		}
 	}
@@ -380,7 +380,7 @@ hr {
 		width: 100%;
 		
 		&.center-max {
-			padding: $grid-padding;
+			padding: 1rem;
 			margin: 0 auto;
 			max-width: $max-width;
 		}

@@ -26,11 +26,11 @@
 .formfield-checkbox, 
 .formfield-radio {
 	position: relative;
-	margin: $grid-padding 0;
+	margin: 1rem 0;
 
 	.formfield-half &:first-child {
 		@include rwd(medium) {
-			margin-right: $grid-padding*2;
+			margin-right: 2rem;
 		}
 	}	
 }
@@ -118,7 +118,7 @@
 	overflow: hidden;
 	background-color: #fff;
 	border: var(--text_color) 1px solid;
-	margin: 0 0 $grid-padding*2 0;
+	margin: 0 0 2rem 0;
 	padding: 0;
 	
 	&::after {
@@ -157,7 +157,7 @@
 
 .formfield-file--container {
 	position: relative;
-	margin: 0 0 $grid-padding*2 0;
+	margin: 0 0 2rem 0;
 
 	&::after {
 		display: inline-block; 
@@ -177,7 +177,7 @@
 	position: relative;
 }
 span.wpcf7-list-item {
-	margin: 0 $grid-padding 0 0;
+	margin: 0 1rem 0 0;
 }
 
 .formfield-radio input[type="radio"]:focus,

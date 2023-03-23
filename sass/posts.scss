@@ -47,14 +47,14 @@
 	}
 
 	.post-block {
-		width: calc(50% - #{$grid-padding}*2);
-		margin: $grid-padding;
+		width: calc(50% - #{1rem}*2);
+		margin: 1rem;
 		
 		@include rwd(medium) {
-			width: calc(33.3333% - #{$grid-padding}*2);
+			width: calc(33.3333% - #{1rem}*2);
 			
 			.has-sidebar & {
-				width: calc(50% - #{$grid-padding}*2);
+				width: calc(50% - #{1rem}*2);
 			}
 		}
 	}			
@@ -63,7 +63,7 @@
 // Sidebar
 
 .widget-container {
-	margin-bottom: $grid-padding*4;
+	margin-bottom: 4rem;
 }	
 .widget-title {
 	@extend h4;
@@ -136,8 +136,8 @@
 // IAS 3
 
 .trigger {
-	padding-top: $grid-padding*3;
-	padding-bottom: $grid-padding*3;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	
 	button {
 		margin: 0 auto;
@@ -145,7 +145,7 @@
 }
 .spinner {
 	text-align: center;
-	padding: $grid-padding*2 0;
+	padding: 2rem 0;
 
 	svg {
 		display: inline-block;
@@ -170,7 +170,7 @@
 // Pagenavi & Nav links
 
 .pagination {
-	padding: $grid-padding*2 0;
+	padding: 2rem 0;
 }
 .nav-links,
 .wp-pagenavi {
@@ -182,7 +182,7 @@
 		display: block;
 		width: 3.4rem;
 		height: 3.4rem;
-		margin: 0 $grid-padding $grid-padding 0;
+		margin: 0 1rem 1rem 0;
 		
 		background-color: var(--text_color);
 		color: #fff;
@@ -231,7 +231,7 @@
 		position: relative;
 		background-color: transparent;
 		color: var(--text_color);
-		padding: 0 $grid-padding;
+		padding: 0 1rem;
 		border-radius: 0;
 		width: auto;
 		
@@ -269,7 +269,7 @@
 	.comment {
 		display: flex;
 		flex-direction: column;
-		margin: $grid-padding*4 0;
+		margin: 4rem 0;
 		
 		@include rwd(medium) {
 			flex-direction: row;
@@ -293,7 +293,7 @@
 		
 		@include rwd(medium) {
 			flex: 1 0 0;
-			padding-left: $grid-padding*3;
+			padding-left: 3rem;
 		}
 
 		a {
@@ -301,9 +301,9 @@
 		}
 		.pending {
 			display: block;
-			margin: $grid-padding 0;
+			margin: 1rem 0;
 			background-color: var(--secondary_color);
-			padding: $grid-padding;
+			padding: 1rem;
 			color: #fff;
 		}		
 	}
@@ -314,15 +314,15 @@
 	.comment-date {
 		font-size: 1.4rem;
 		font-family: var(--font_mono);
-		margin-bottom: $grid-padding*2;
+		margin-bottom: 2rem;
 	}
 	
 	.reply {
 		width: 100%;
-		margin-top: $grid-padding;
+		margin-top: 1rem;
 		
 		@include rwd(medium) {
-			padding-left: calc(9.6rem + #{$grid-padding*3});
+			padding-left: calc(9.6rem + #{3rem});
 		}
 		
 		a {
@@ -338,7 +338,7 @@
 		font-size: 1.6rem;
 		a {
 			display: inline-block;
-			margin-top: $grid-padding;
+			margin-top: 1rem;
 			@include link-style();
 		}
 	}
