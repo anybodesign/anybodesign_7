@@ -2,15 +2,6 @@
 // = Mixins
 // -------------------------
 
-// Dotted line
-
-@mixin dotted-line($color1: var(--text_color), $color2: transparent, $space: 6, $width: 1) {
-    background-image: linear-gradient(to right, $color1 0%, $color1 (100% / $space), $color2 (100% / $space));
-    background-position: 0 bottom; 
-    background-size: ($space + px) ($width + px);
-    background-repeat: repeat-x;
-}
-
 // Focus visible fallback
 
 @mixin focus() {
@@ -31,58 +22,29 @@
 	}	
 }
 
-// Link underline
-
-@mixin underline($color: $primary_color, $width: .4rem) {
-
-	text-decoration: none;
-	background-image:
-		linear-gradient(
-			$color 0,
-			$color .2rem
-		);
-	background-size: 0% $width;
-	background-position: 0 bottom;
-	background-repeat: no-repeat;
-	transition: .2s ease-in-out;
-	
-	&:hover {
-		background-size: 100% $width;
-	}
-	&:focus-visible {
-		background-size: 100% $width;
-	}
-	
-	@include focus {
-		&:focus {
-			background-size: 100% $width;
-		}
-	}
-	
-}
-
 // Link Style
 
 @mixin link-style($bg: dark) {
 	
 	$color: var(--text_color);
-	$text: var(--text_color);
+	$text: var(--accent_color);
 	
 	@if $bg == white {
 		$color: #fff;
-		$text: #fff;
+		$text: var(--text_color);
 	}
 	
+	border-radius: $radius;
 	text-decoration: none;
-	padding-bottom: .25rem;
+	padding: .25rem;
     background-image:
 		linear-gradient(
 			transparent 0,
-			transparent 0.9rem,
-			$color 0.9rem,
+			transparent 0.8rem,
+			$color 0.8rem,
 			$color 1rem
 		);
-    background-size: 100% 1rem;
+    background-size: 100% 1.1rem;
     background-position: 0 bottom;
     background-repeat: no-repeat;
 	transition: .2s ease-in-out;
@@ -96,12 +58,13 @@
 			$color 0.9rem,
 			$color 1rem
 		);
-		background-size: 20% 1rem;
+		background-size: 100% 200%;
 	}
 	&:focus {
 		background-color: var(--text_color);
 		color: #fff;
 		background-image: none;
+		font-family: var(--font_bold);
 	}
 	&:active {
 		color: var(--secondary_color);

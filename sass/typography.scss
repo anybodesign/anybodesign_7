@@ -132,39 +132,6 @@ li ul {
 	}
 }
 
-// Custom Tinymce styles
-
-p.text-intro {
-	font-size: 2rem;
-	
-	@include rwd(large) {
-		font-size: 2.2rem;
-	}
-}
-p.text-mentions {
-	font-size: 1.4rem;
-	
-	@include rwd(large) {
-		font-size: 1.3rem;
-	}
-}
-
-// White text, inside a .white-text class container
-
-.has-text-background-color,
-.white-text {
-	
-	p, li, span, small, time, div,
-	h1, h2, h3, h4, h5, h6,
-	label, legend, address, figcaption {
-		color: #fff;
-	}
-	::selection {
-		color: var(--text_color);
-	}
-	
-}
-
 // Links
 
 a {
@@ -173,6 +140,12 @@ a {
 }
 a:hover {
 	text-decoration: none;
+}
+p a[target="_blank"]::after {
+	content: '\2936';
+	display: inline-block;
+	transform: rotate(180deg);
+	margin-left: .3rem;
 }
 
 .content-area {
