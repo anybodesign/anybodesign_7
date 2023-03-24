@@ -4,15 +4,14 @@
 //
 // ------------------------------
 
-// You can use the class .action-btn on <a>, <button> or <input> 
-
 .action-btn {
 	display: inline-block;
 	padding: 1rem 2rem;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-family: var(--font_title);
 	text-transform: uppercase;
 	text-decoration: none;
+	border: var(--text_color) 2px solid;
 	background-color: var(--text_color);
 	color: #fff;
 	transition: background .2s linear;
@@ -27,8 +26,6 @@
 	}	
 }
 
-// Variation example of .action-btn
-
 .white-btn {
 	@extend .action-btn;
 	background-color: #fff;
@@ -36,37 +33,7 @@
 
 	&:focus, 
 	&:hover {
-		background-color: var(--accent_color) !important;
-		color: var(--text_color) !important;
+		background-color: var(--text_color) !important;
+		color: #fff !important;
 	}	
 }
-
-
-// Icons 
-
-// .icon-btn--arrow {
-// 	@extend .action-btn;
-// 	position: relative;
-// 	padding-right: 5rem;
-// 	
-// 	&::after {
-// 		content: '';
-// 		display: block;
-// 		position: absolute;
-// 		top: 50%;
-// 		right: 1rem*1.5;
-// 		transform: translateY(-50%);
-// 		width: 1.8rem;
-// 		height: 1.6rem;
-// 		background-image: url(img/ui/arrow.svg);
-// 		background-position: center center;
-// 		background-repeat: no-repeat;
-// 		background-size: contain;
-// 	}
-// 	&:focus, 
-// 	&:hover {
-// 		&::after {
-// 			background-image: url(img/ui/arrow-white.svg);
-// 		}
-// 	}
-// }
