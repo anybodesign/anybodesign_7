@@ -3,13 +3,9 @@
 				<div class="footer-copyright">				
 					
 					<p>
-						<?php if(get_theme_mod('footer_text')) {
-							echo esc_html(get_theme_mod('footer_text', '')); 
-						} else {
-							echo esc_html('&copy;'); echo date(' Y '); echo esc_html(bloginfo('name')).'.'; 	
-						} ?>
+						<?php echo esc_html('&copy;'); echo date(' Y '); echo esc_html(bloginfo('name')).'.'; ?>
 						
-						<a class="wp-love<?php if ( get_theme_mod('display_wp' ) == false ) { echo esc_attr(' out-of-reach'); } ?>" href="//wordpress.org"><?php esc_html_e('Powered by WordPress!', 'anybodesign'); ?></a>
+						<a class="wp-love" href="//wordpress.org"><?php esc_html_e('Powered by WordPress!', 'anybodesign'); ?></a>
 					</p>
 					
 					<?php if ( has_nav_menu( 'footer_menu' ) ) : ?>

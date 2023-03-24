@@ -16,5 +16,5 @@ get_header(); ?>
 						endwhile;					
 					?>
 				</div>	
-						
+				
 <?php get_footer(); ?>

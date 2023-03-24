@@ -17,7 +17,7 @@ if ( post_password_required() ) {
 
 					<?php if ( have_comments() ) : ?>
 						<h3 class="comments-title"><?php esc_html_e('They talk about it','anybodesign'); ?></h3>
-				
+						
 						<ol class="comment-list">
 							<?php
 								wp_list_comments( array(
@@ -29,9 +29,9 @@ if ( post_password_required() ) {
 						<div>
 							<?php paginate_comments_links(); ?>
 						</div>
-				
+						
 					<?php endif;?>
-				
+					
 					<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 						<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'anybodesign' ); ?></p>
 					<?php endif; ?>
@@ -46,5 +46,5 @@ if ( post_password_required() ) {
 					
 					comment_form($comments_args);
 					?>
-				
+					
 				</div>

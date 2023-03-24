@@ -295,51 +295,6 @@ function fs_custom_nav_menus() {
 }
 add_action( 'init', 'fs_custom_nav_menus' );
 
-// Subpages menu
-
-function fs_subpages_menu() {
-	global $post;
-
-	// Get post ancestors 
-	$post_ancestors = get_post_ancestors($post);
-
-	// Check if a page has any parent pages
-	if ($post_ancestors) {
-
-		//get the top page id
-		$top_page = $post_ancestors ? end($post_ancestors) : $post->ID;
-		
-		// How many ancestors does this page have? Counts the array adds one.
-		$n = count($post_ancestors) + 1;
-		
-		// Get the pages children, if it has any
-		$pages = get_pages();
-		$page_children = get_page_children($post->ID, $pages);
-		
-		// Checks if a page has children
-		if (!empty($page_children)) {
-			$children = wp_list_pages("title_li=&child_of=". $top_page ."&echo=0&sort_column=menu_order&depth=" . $n);
-		} else { // If the page doesn't have children
-			$children = wp_list_pages("title_li=&child_of=". $top_page ."&echo=0&sort_column=menu_order&depth=" . ($n - 1));
-		}
-		
-	} else {
-		$children = wp_list_pages("title_li=&child_of=". $post->ID ."&echo=0&sort_column=menu_order&depth=1");
-	}
-
-	// Only show child navigation if there are children
-	if ( $children ) {
-		$menu = '<nav class="sub-pages" aria-label="'.__("Secondary navigation","anybodesign").'">';
-		$menu .= '<ul class="subpages-list">';
-		$menu .= $children;
-		$menu .= '</ul>';
-		$menu .= '</nav>';
-	} else {
-		$menu = null;
-	}
-	print $menu;
-}
-
 // Nav highlights fix
 
 function fs_nav_classes( $classes, $item ) {
