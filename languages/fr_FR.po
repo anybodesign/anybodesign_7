@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-03-24 12:57+0100\n"
-"PO-Revision-Date: 2023-03-24 12:57+0100\n"
+"POT-Creation-Date: 2023-03-24 15:36+0100\n"
+"PO-Revision-Date: 2023-03-24 15:36+0100\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -36,60 +36,60 @@ msgstr "On en discute ?"
 msgid "Add my comment!"
 msgstr "Ajouter mon commentaire !"
 
-#: functions.php:290 template-parts/header-nav.php:6
+#: functions.php:275 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:291 template-parts/footer-copyright.php:12
+#: functions.php:276 template-parts/footer-copyright.php:12
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:306 template-parts/page-banner-title.php:12
+#: functions.php:291 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:394
+#: functions.php:379
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:394
+#: functions.php:379
 msgid "of "
 msgstr "de "
 
-#: functions.php:433
+#: functions.php:418
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:434
+#: functions.php:419
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:444
+#: functions.php:429
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:460
+#: functions.php:445
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:462
+#: functions.php:447
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:494
+#: functions.php:479
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:500
+#: functions.php:485
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:509
+#: functions.php:494
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:515
+#: functions.php:500
 msgid "Edit"
 msgstr "Modifier"
 
@@ -142,7 +142,7 @@ msgstr "Propulsé par WordPress !"
 msgid "Social Networks"
 msgstr "Réseaux sociaux"
 
-#: template-parts/header-brand-logo.php:17
+#: template-parts/header-brand-logo.php:19
 msgid "Graphic<br>and Web Design<br>Workshop"
 msgstr "Atelier<br>de création graphique<br>& web design"
 
