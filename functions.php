@@ -166,21 +166,6 @@ function fs_scripts_load() {
 			// Other stuff
 			
 			wp_register_script(
-				'high-contrast', 
-				FS_THEME_URL . '/js/high-contrast.js', 
-				array('jquery'), 
-				FS_THEME_VERSION, 
-				true
-			);
-			wp_register_script(
-				'cookie', 
-				FS_THEME_URL . '/js/jquery.cookie.js', 
-				array('jquery'), 
-				FS_THEME_VERSION, 
-				true
-			);
-			
-			wp_register_script(
 				'skiplink-focus-fix', 
 				FS_THEME_URL . '/js/skip-link-focus-fix.js', 
 				array(), 
