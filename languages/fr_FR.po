@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-03-04 14:34+0100\n"
-"PO-Revision-Date: 2023-03-04 14:35+0100\n"
+"POT-Creation-Date: 2023-03-24 12:57+0100\n"
+"PO-Revision-Date: 2023-03-24 12:57+0100\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -36,552 +36,115 @@ msgstr "On en discute ?"
 msgid "Add my comment!"
 msgstr "Ajouter mon commentaire !"
 
-#: functions.php:463 template-parts/header-toolbar.php:7
-msgid "Toolbar Menu"
-msgstr "Menu barre d'outils"
-
-#: functions.php:464 template-parts/header-nav.php:6
+#: functions.php:290 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:465 template-parts/footer-copyright.php:16
+#: functions.php:291 template-parts/footer-copyright.php:12
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:466
-msgid "Social Menu"
-msgstr "Menu réseaux sociaux"
-
-#: functions.php:507
-msgid "Secondary navigation"
-msgstr "Navigation secondaire"
-
-#: functions.php:526 template-parts/page-banner-title.php:12
+#: functions.php:306 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:614
+#: functions.php:394
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:614
+#: functions.php:394
 msgid "of "
 msgstr "de "
 
-#: functions.php:658
-msgid "Thumbnail x2"
-msgstr "Miniature (x2)"
-
-#: functions.php:659
-msgid "Medium x2"
-msgstr "Moyenne (x2)"
-
-#: functions.php:660
-msgid "Large x2"
-msgstr "Grande x2"
-
-#: functions.php:661
+#: functions.php:433
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:662
+#: functions.php:434
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:702
+#: functions.php:444
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:711
-msgid "Footer Widgets #1"
-msgstr "Widgets pied de page #1"
-
-#: functions.php:720
-msgid "Footer Widgets #2"
-msgstr "Widgets pied de page #2"
-
-#: functions.php:729
-msgid "Footer Widgets #3"
-msgstr "Widgets pied de page #3"
-
-#: functions.php:754
-msgid "Text intro"
-msgstr "Texte d’intro"
-
-#: functions.php:760
-msgid "Text mentions"
-msgstr "Mentions"
-
-#: functions.php:766
-msgid "Action button"
-msgstr "Bouton d’action"
-
-#: functions.php:786
+#: functions.php:460
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:788 template-parts/header-toolbar.php:24
+#: functions.php:462
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:820
+#: functions.php:494
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:826
+#: functions.php:500
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:835
+#: functions.php:509
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:841
+#: functions.php:515
 msgid "Edit"
 msgstr "Modifier"
 
-#: inc/acf/social-icons-fields.php:9
-msgid "Social icons"
-msgstr "Icônes de réseaux sociaux"
-
-#: inc/acf/social-icons-fields.php:13
-msgid "Icon"
-msgstr "Icône"
-
-#: inc/color-palettes.php:25 inc/customizer.php:125
-msgid "Primary color"
-msgstr "Couleur primaire"
-
-#: inc/color-palettes.php:30 inc/customizer.php:150
-msgid "Secondary color"
-msgstr "Couleur secondaire"
-
-#: inc/color-palettes.php:35
-msgid "Accent color"
-msgstr "Couleur d’accentuation"
-
-#: inc/color-palettes.php:40 inc/customizer.php:228
-msgid "Text color"
-msgstr "Couleur du texte"
-
-#: inc/color-palettes.php:45 inc/customizer.php:248
-msgid "Background color"
-msgstr "Couleur d’arrière-plan"
-
-#: inc/color-palettes.php:50
-msgid "White"
-msgstr "Blanc"
-
-#: inc/customizer.php:53
-msgid "Header Options"
-msgstr "Options de l'en-tête"
-
-#: inc/customizer.php:60
-msgid "Footer Options"
-msgstr "Options du pied de page"
-
-#: inc/customizer.php:67
-msgid "Theme Options"
-msgstr "Options du thème"
-
-#: inc/customizer.php:74
-msgid "Blog Options"
-msgstr "Options du blog"
-
-#: inc/customizer.php:81
-msgid "Layout Options"
-msgstr "Options de mise en page"
-
-#: inc/customizer.php:82
-msgid "Choose the layout of the site header and main navigation."
-msgstr ""
-"Choisissez la mise en page pour l'en-tête du site et la navigation "
-"principale."
-
-#: inc/customizer.php:89
-msgid "Theme Pictures"
-msgstr "Images du thème"
-
-#: inc/customizer.php:90
-msgid "Select default banner pictures."
-msgstr "Sélection des images par défaut pour la bannière."
-
-#: inc/customizer.php:97
-msgid "Theme Fonts"
-msgstr "Polices du thème"
-
-#: inc/customizer.php:98
-msgid "Choose a font combination for the site."
-msgstr "Choisissez une combinaison de polices pour le site."
-
-#: inc/customizer.php:126
-msgid "Main color and titles color"
-msgstr "Couleur principale et couleur des titres"
-
-#: inc/customizer.php:170
-msgid "Contrast color"
-msgstr "Couleur de contraste"
-
-#: inc/customizer.php:171
-msgid "Links and contrast color"
-msgstr "Couleur des liens et de contraste"
-
-#: inc/customizer.php:192
-msgid "Buttons white text"
-msgstr "Texte blanc pour les boutons"
-
-#: inc/customizer.php:209
-msgid "Buttons white text on mouse over"
-msgstr "Texte blanc pour les boutons au survol de la souris"
-
-#: inc/customizer.php:249
-msgid "Used for components backgrounds"
-msgstr "Utilisé pour les arrière-plans de composants"
-
-#: inc/customizer.php:267
-msgid "Page background color"
-msgstr "Couleur de fond page"
-
-#: inc/customizer.php:287
-msgid "Header color"
-msgstr "Couleur de l'en-tête"
-
-#: inc/customizer.php:305
-msgid "White text in header"
-msgstr "Texte blanc dans l’en-tête"
-
-#: inc/customizer.php:324
-msgid "Footer color"
-msgstr "Couleur du pied de page"
-
-#: inc/customizer.php:342
-msgid "White text in footer"
-msgstr "Texte blanc dans le footer"
-
-#: inc/customizer.php:367
-msgid "Site Logo"
-msgstr "Logo du site"
-
-#: inc/customizer.php:368
-msgid "Your logo, displayed instead of the website title."
-msgstr "Votre logo, affiché à la place du titre du site."
-
-#: inc/customizer.php:381
-msgid "Logo height"
-msgstr "Hauteur du logo"
-
-#: inc/customizer.php:382 inc/customizer.php:414
-msgid "Set a maximum height in pixels."
-msgstr "Définir une hauteur maximale en pixels."
-
-#: inc/customizer.php:399
-msgid "Site Logo - Mobile"
-msgstr "Logo du site - mobile"
-
-#: inc/customizer.php:400
-msgid ""
-"Specific version of the logo for mobile devices. If none, the default logo "
-"will be used."
-msgstr ""
-"Version spécifique du logo pour appareils mobiles. Si non renseigné, le logo "
-"par défaut sera utilisé."
-
-#: inc/customizer.php:413
-msgid "Mobile logo height"
-msgstr "Hauteur du logo mobile"
-
-#: inc/customizer.php:433
-msgid "Hide the site title"
-msgstr "Masquer le titre du site"
-
-#: inc/customizer.php:453
-msgid "Hide the website tagline"
-msgstr "Masquer le slogan du site"
-
-#: inc/customizer.php:472
-msgid "Display search in toolbar"
-msgstr "Afficher la recherche dans la barre d’outils"
-
-#: inc/customizer.php:491
-msgid "Display high Contrast button in toolbar"
-msgstr "Afficher un bouton de contraste élevé dans la barre d’outils"
-
-#: inc/customizer.php:515
-msgid "Custom footer text"
-msgstr "Texte de pied de page personnalisé"
-
-#: inc/customizer.php:516
-msgid "Add a custom text instead of the year and blog name."
-msgstr "Ajouter un texte personnalisé au lieu du nom de blog et de l’année."
-
-#: inc/customizer.php:537
-msgid "Display WordPress Link"
-msgstr "Afficher le lien WordPress"
-
-#: inc/customizer.php:561
-msgid "Display a Back to top button"
-msgstr "Afficher un bouton Haut de page"
-
-#: inc/customizer.php:580
-msgid "Make the header sticky"
-msgstr "Rendre l'en-tête collant"
-
-#: inc/customizer.php:599
-msgid "Load new posts on click"
-msgstr "Charger les nouveaux articles au clic"
-
-#: inc/customizer.php:618
-msgid "Use Scrollout to animate blocks on scroll"
-msgstr "Utilisez Scrollout pour animer les blocs au scroll"
-
-#: inc/customizer.php:637
-msgid "Use Fancybox to enlarge pictures"
-msgstr "Utilisez Fancybox pour agrandir les images"
-
-#: inc/customizer.php:656
-msgid "Disable custom color palette"
-msgstr "Désactiver la palette de couleurs personnalisée"
-
-#: inc/customizer.php:675
-msgid "Disable custom font sizes"
-msgstr "Désactiver les tailles de police personnalisées"
-
-#: inc/customizer.php:695
-msgid "Enable custom logo"
-msgstr "Activer le logo personnalisé"
-
-#: inc/customizer.php:711
-msgid "Enable custom background"
-msgstr "Activer l’arrière-plan personnalisé"
-
-#: inc/customizer.php:727
-msgid "Enable custom header"
-msgstr "Activer l’en-tête personnalisé"
-
-#: inc/customizer.php:743
-msgid "Enable post formats"
-msgstr "Activez les formats d’articles"
-
-#: inc/customizer.php:759
-msgid "Enable Woocommerce support"
-msgstr "Activer le support Woocommerce"
-
-#: inc/customizer.php:777
-msgid "Blog introduction text"
-msgstr "Texte d’introduction du blog"
-
-#: inc/customizer.php:795
-msgid "Show the sidebar on the blog page"
-msgstr "Afficher la barre latérale sur la page du blog"
-
-#: inc/customizer.php:812
-msgid "Show the sidebar on single posts"
-msgstr "Afficher la barre latérale sur les articles"
-
-#: inc/customizer.php:831
-msgid "Show the category dropdown on the blog page"
-msgstr "Afficher le sélecteur de catégories sur les pages du blog"
-
-#: inc/customizer.php:850
-msgid "Excerpt lenght (number of words)"
-msgstr "Longueur de l’extrait (nombre de mots)"
-
-#: inc/customizer.php:869
-msgid "Show the publication date in post meta"
-msgstr "Afficher la date de publication dans les post meta"
-
-#: inc/customizer.php:885
-msgid "Show the author in post meta"
-msgstr "Afficher l’auteur dans les post meta"
-
-#: inc/customizer.php:901
-msgid "Show the category in post meta"
-msgstr "Afficher la catégorie dans les post meta"
-
-#: inc/customizer.php:920
-msgid ""
-"Add basic social networks sharing buttons on single posts (Facebook, "
-"Twitter, LinkedIn, e-mail)"
-msgstr ""
-"Ajouter des boutons de partage de base pour les réseaux sociaux sur les "
-"articles (Facebook, Twitter, LinkedIn, e-mail)"
-
-#: inc/customizer.php:937
-msgid "Enable post tags"
-msgstr "Activer les étiquettes"
-
-#: inc/customizer.php:961
-msgid "Layout version"
-msgstr "Version de mise en page"
-
-#: inc/customizer.php:964
-msgid "Version 1"
-msgstr "Version 1"
-
-#: inc/customizer.php:965
-msgid "Version 2"
-msgstr "Version 2"
-
-#: inc/customizer.php:983
-msgid "Child pages location"
-msgstr "Emplacement des pages enfants"
-
-#: inc/customizer.php:987
-msgid "Page banner"
-msgstr "Bannière de page"
-
-#: inc/customizer.php:988
-msgid "Sidebar"
-msgstr "Barre latérale"
-
-#: inc/customizer.php:989
-msgid "Do not display child pages"
-msgstr "Ne pas afficher les pages enfants"
-
-#: inc/customizer.php:1007
-msgid "Display page description or post metas in the banner"
-msgstr "Afficher la description de la page ou les post metas dans la bannière"
-
-#: inc/customizer.php:1028
-msgid "Choose your fonts"
-msgstr "Choisissez vos polices"
-
-#: inc/customizer.php:1031
-msgid "Barlow"
-msgstr "Barlow"
-
-#: inc/customizer.php:1032
-msgid "Bebas & Bitter"
-msgstr "Bebas & Bitter"
-
-#: inc/customizer.php:1033
-msgid "Playfair & Atkinson"
-msgstr "Playfair & Atkinson"
-
-#: inc/customizer.php:1034
-msgid "Luciole"
-msgstr "Luciole"
-
-#: inc/customizer.php:1035
-msgid "Miriam Libre & Asap"
-msgstr "Miriam Libre & Asap"
-
-#: inc/customizer.php:1036
-msgid "Custom Child Theme Font"
-msgstr "Police personnalisée du thème enfant"
-
-#: inc/customizer.php:1056
-msgid "Show background images in the banner"
-msgstr "Afficher des images de fond dans la bannière"
-
-#: inc/customizer.php:1075
-msgid "Default banner"
-msgstr "Bannière par défaut"
-
-#: inc/customizer.php:1076
-msgid "Choose a default picture for the page banner. (2048 x 625 pixels max.)"
-msgstr ""
-"Choisissez une image par défaut pour la bannière de page. (2048 x 625 pixels "
-"max.)"
-
-#: inc/customizer.php:1096
-msgid "Blog"
-msgstr "Blog"
-
-#: inc/customizer.php:1097
-msgid "Choose a picture for the blog banner. (2048 x 625 pixels max.)"
-msgstr ""
-"Choisissez une photo pour la bannière du blog. (2048 x 625 pixels max.)"
-
-#: inc/customizer.php:1117 template-parts/nothing.php:37
-msgid "404 error"
-msgstr "Erreur 404"
-
-#: inc/customizer.php:1118
-msgid "Choose a picture for the 404 error page. (2048 x 625 pixels max.)"
-msgstr ""
-"Choisissez une image pour la page d’erreur 404. (2048 x 625 pixels max.)"
-
-#: inc/font-sizes.php:6
-msgid "Small"
-msgstr "Petite"
-
-#: inc/font-sizes.php:11
-msgid "Regular"
-msgstr "Normale"
-
-#: inc/font-sizes.php:16
-msgid "Medium"
-msgstr "Moyenne"
-
-#: inc/font-sizes.php:21
-msgid "Large"
-msgstr "Grande"
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:54
-msgid "View details"
-msgstr "Voir les détails"
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:77
-#, php-format
-msgid "More information about %s"
-msgstr "Plus d'informations sur %s"
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:128
-msgid "Check for updates"
-msgstr "Vérifier les mises à jour"
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:214
-#, php-format
-msgctxt "the plugin title"
-msgid "The %s plugin is up to date."
-msgstr "L’extension %s est à jour."
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:216
-#, php-format
-msgctxt "the plugin title"
-msgid "A new version of the %s plugin is available."
-msgstr "Une nouvelle version de l'extension %s est disponible."
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:218
-#, php-format
-msgctxt "the plugin title"
-msgid "Could not determine if updates are available for %s."
-msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
-
-#: inc/plugin-update-checker/Puc/v4p11/Plugin/Ui.php:224
-#, php-format
-msgid "Unknown update checker status \"%s\""
-msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
-
-#: inc/plugin-update-checker/Puc/v4p11/Vcs/PluginUpdateChecker.php:98
-msgid "There is no changelog available."
-msgstr "Il n’y a aucun historique des mises à jour disponible."
+#: inc/anybodesign-cpt.php:35
+msgctxt "Post Type General Name"
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: inc/anybodesign-cpt.php:36
+msgctxt "Post Type Singular Name"
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: inc/anybodesign-cpt.php:37 inc/anybodesign-cpt.php:38
+#: inc/anybodesign-cpt.php:39 inc/anybodesign-cpt.php:48
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: inc/anybodesign-cpt.php:83
+msgid "Choose a title for this project"
+msgstr "Choisissez un titre pour ce projet"
+
+#: inc/anybodesign-cpt.php:99
+msgctxt "Taxonomy General Name"
+msgid "Creation Categories"
+msgstr "Types de créations"
+
+#: inc/anybodesign-cpt.php:100
+msgctxt "Taxonomy Singular Name"
+msgid "Creation Category"
+msgstr "Type de création"
+
+#: inc/anybodesign-cpt.php:101
+msgid "Creation Categories"
+msgstr "Types de créations"
 
 #: inc/subnav-walker.php:21
 msgid "Unfold Sub-Menu"
 msgstr "Déplier le sous-menu"
 
-#: index.php:42
-msgid "Categories"
-msgstr "Catégories"
-
-#: index.php:47
-msgid "All categories"
-msgstr "Toutes les catégories"
-
 #: template-parts/footer-back2top.php:3
 msgid "Back to top"
 msgstr "Haut de page"
 
-#: template-parts/footer-copyright.php:12
+#: template-parts/footer-copyright.php:8
 msgid "Powered by WordPress!"
 msgstr "Propulsé par WordPress !"
 
-#: template-parts/footer-social.php:5
+#: template-parts/footer-social.php:4
 msgid "Social Networks"
 msgstr "Réseaux sociaux"
+
+#: template-parts/header-brand-logo.php:17
+msgid "Graphic<br>and Web Design<br>Workshop"
+msgstr "Atelier<br>de création graphique<br>& web design"
 
 #: template-parts/header-brand.php:15
 msgid "Go to Home Page"
@@ -598,22 +161,6 @@ msgstr "Aller au contenu principal"
 #: template-parts/header-skiplinks.php:8
 msgid "Go to main menu"
 msgstr "Aller au menu principal"
-
-#: template-parts/header-toolbar.php:22
-msgid "Enter keyword"
-msgstr "Entrer un mot clé"
-
-#: template-parts/header-toolbar.php:23
-msgid "Search for"
-msgstr "Rechercher"
-
-#: template-parts/header-toolbar.php:32
-msgid "High contrast"
-msgstr "Contraste élevé"
-
-#: template-parts/header-toolbar.php:36
-msgid "Restore contrast"
-msgstr "Retablir le contraste"
 
 #: template-parts/nothing.php:15 template-parts/nothing.php:20
 #: template-parts/nothing.php:25
@@ -647,6 +194,10 @@ msgstr ""
 "Aucun résultat ne correspond à vos critères de recherche. Essayez avec "
 "d’autres mots clés."
 
+#: template-parts/nothing.php:37
+msgid "404 error"
+msgstr "Erreur 404"
+
 #: template-parts/nothing.php:38
 msgid ""
 "It seems that page or post doesn’t exists anymore. Or maybe the URL is wrong "
@@ -668,7 +219,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr "Résultats de la recherche pour : %s"
 
-#: template-parts/page-content.php:21 template-parts/post-pagination.php:27
+#: template-parts/page-content.php:21 template-parts/post-pagination.php:24
 msgid "Page"
 msgstr "Page"
 
@@ -676,31 +227,15 @@ msgstr "Page"
 msgid "Pages:"
 msgstr "Pages :"
 
-#: template-parts/page-content.php:28 template-parts/post-pagination.php:26
+#: template-parts/page-content.php:28 template-parts/post-pagination.php:23
 msgid "Next page"
 msgstr "Page suivante"
 
-#: template-parts/page-content.php:29 template-parts/post-pagination.php:25
+#: template-parts/page-content.php:29 template-parts/post-pagination.php:22
 msgid "Previous page"
 msgstr "Page précédente"
 
-#: template-parts/post-meta.php:22
-msgid "Posted "
-msgstr "Publié "
-
-#: template-parts/post-meta.php:24
-msgid "on&nbsp;"
-msgstr "le&nbsp;"
-
-#: template-parts/post-meta.php:28
-msgid "by&nbsp;"
-msgstr "par&nbsp;"
-
-#: template-parts/post-meta.php:31
-msgid "in&nbsp;"
-msgstr "dans&nbsp;"
-
-#: template-parts/post-meta.php:39
+#: template-parts/post-meta.php:19
 #, php-format
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -715,41 +250,13 @@ msgstr "Rien de plus à afficher"
 msgid "Load more posts"
 msgstr "Afficher plus d’articles"
 
-#: template-parts/post-share.php:6
-msgid "Share post"
-msgstr "Partager l’article"
-
-#: template-parts/post-share.php:8
-msgid "Share on Facebook"
-msgstr "Partager sur Facebook"
-
-#: template-parts/post-share.php:11
-msgid "Share on Twitter"
-msgstr "Partager sur Twitter"
-
-#: template-parts/post-share.php:14
-msgid "Share on LinkedIn"
-msgstr "Partager sur LinkedIn"
-
-#: template-parts/post-share.php:17
-msgid "Share by e-mail"
-msgstr "Partager par email"
-
-#: template-parts/sidebar-burger.php:6
-msgid "Sidebar Menu"
-msgstr "Menu barre latérale"
-
 #. Theme Name of the plugin/theme
 msgid "Anybodesign"
 msgstr "Anybodesign"
 
-#. Theme URI of the plugin/theme
-msgid "https://github.com/anybodesign/anybodesign"
-msgstr "https://github.com/anybodesign/anybodesign"
-
 #. Description of the plugin/theme
-msgid "A WordPress Starter Theme"
-msgstr "Un starter thème pour WordPress"
+msgid "The New Anybodesign WordPress Theme (2023)"
+msgstr "Le nouveau thème WordPress Anybodesign (2023)"
 
 #. Author of the plugin/theme
 msgid "Thomas Villain"
@@ -762,6 +269,415 @@ msgstr "https://anybodesign.com/"
 #. Template Name of the plugin/theme
 msgid "Maintenance"
 msgstr "Maintenance"
+
+#~ msgid "Secondary navigation"
+#~ msgstr "Navigation secondaire"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "All categories"
+#~ msgstr "Toutes les catégories"
+
+#~ msgid "Toolbar Menu"
+#~ msgstr "Menu barre d'outils"
+
+#~ msgid "Enter keyword"
+#~ msgstr "Entrer un mot clé"
+
+#~ msgid "Search for"
+#~ msgstr "Rechercher"
+
+#~ msgid "High contrast"
+#~ msgstr "Contraste élevé"
+
+#~ msgid "Restore contrast"
+#~ msgstr "Retablir le contraste"
+
+#~ msgid "Posted "
+#~ msgstr "Publié "
+
+#~ msgid "on&nbsp;"
+#~ msgstr "le&nbsp;"
+
+#~ msgid "by&nbsp;"
+#~ msgstr "par&nbsp;"
+
+#~ msgid "in&nbsp;"
+#~ msgstr "dans&nbsp;"
+
+#~ msgid "Share post"
+#~ msgstr "Partager l’article"
+
+#~ msgid "Share on Facebook"
+#~ msgstr "Partager sur Facebook"
+
+#~ msgid "Share on Twitter"
+#~ msgstr "Partager sur Twitter"
+
+#~ msgid "Share on LinkedIn"
+#~ msgstr "Partager sur LinkedIn"
+
+#~ msgid "Share by e-mail"
+#~ msgstr "Partager par email"
+
+#~ msgid "Sidebar Menu"
+#~ msgstr "Menu barre latérale"
+
+#~ msgid "Social Menu"
+#~ msgstr "Menu réseaux sociaux"
+
+#~ msgid "Thumbnail x2"
+#~ msgstr "Miniature (x2)"
+
+#~ msgid "Medium x2"
+#~ msgstr "Moyenne (x2)"
+
+#~ msgid "Large x2"
+#~ msgstr "Grande x2"
+
+#~ msgid "Footer Widgets #1"
+#~ msgstr "Widgets pied de page #1"
+
+#~ msgid "Footer Widgets #2"
+#~ msgstr "Widgets pied de page #2"
+
+#~ msgid "Footer Widgets #3"
+#~ msgstr "Widgets pied de page #3"
+
+#~ msgid "Text intro"
+#~ msgstr "Texte d’intro"
+
+#~ msgid "Text mentions"
+#~ msgstr "Mentions"
+
+#~ msgid "Action button"
+#~ msgstr "Bouton d’action"
+
+#~ msgid "Social icons"
+#~ msgstr "Icônes de réseaux sociaux"
+
+#~ msgid "Icon"
+#~ msgstr "Icône"
+
+#~ msgid "Primary color"
+#~ msgstr "Couleur primaire"
+
+#~ msgid "Secondary color"
+#~ msgstr "Couleur secondaire"
+
+#~ msgid "Accent color"
+#~ msgstr "Couleur d’accentuation"
+
+#~ msgid "Text color"
+#~ msgstr "Couleur du texte"
+
+#~ msgid "Background color"
+#~ msgstr "Couleur d’arrière-plan"
+
+#~ msgid "White"
+#~ msgstr "Blanc"
+
+#~ msgid "Header Options"
+#~ msgstr "Options de l'en-tête"
+
+#~ msgid "Footer Options"
+#~ msgstr "Options du pied de page"
+
+#~ msgid "Theme Options"
+#~ msgstr "Options du thème"
+
+#~ msgid "Blog Options"
+#~ msgstr "Options du blog"
+
+#~ msgid "Layout Options"
+#~ msgstr "Options de mise en page"
+
+#~ msgid "Choose the layout of the site header and main navigation."
+#~ msgstr ""
+#~ "Choisissez la mise en page pour l'en-tête du site et la navigation "
+#~ "principale."
+
+#~ msgid "Theme Pictures"
+#~ msgstr "Images du thème"
+
+#~ msgid "Select default banner pictures."
+#~ msgstr "Sélection des images par défaut pour la bannière."
+
+#~ msgid "Theme Fonts"
+#~ msgstr "Polices du thème"
+
+#~ msgid "Choose a font combination for the site."
+#~ msgstr "Choisissez une combinaison de polices pour le site."
+
+#~ msgid "Main color and titles color"
+#~ msgstr "Couleur principale et couleur des titres"
+
+#~ msgid "Contrast color"
+#~ msgstr "Couleur de contraste"
+
+#~ msgid "Links and contrast color"
+#~ msgstr "Couleur des liens et de contraste"
+
+#~ msgid "Buttons white text"
+#~ msgstr "Texte blanc pour les boutons"
+
+#~ msgid "Buttons white text on mouse over"
+#~ msgstr "Texte blanc pour les boutons au survol de la souris"
+
+#~ msgid "Used for components backgrounds"
+#~ msgstr "Utilisé pour les arrière-plans de composants"
+
+#~ msgid "Page background color"
+#~ msgstr "Couleur de fond page"
+
+#~ msgid "Header color"
+#~ msgstr "Couleur de l'en-tête"
+
+#~ msgid "White text in header"
+#~ msgstr "Texte blanc dans l’en-tête"
+
+#~ msgid "Footer color"
+#~ msgstr "Couleur du pied de page"
+
+#~ msgid "White text in footer"
+#~ msgstr "Texte blanc dans le footer"
+
+#~ msgid "Site Logo"
+#~ msgstr "Logo du site"
+
+#~ msgid "Your logo, displayed instead of the website title."
+#~ msgstr "Votre logo, affiché à la place du titre du site."
+
+#~ msgid "Logo height"
+#~ msgstr "Hauteur du logo"
+
+#~ msgid "Set a maximum height in pixels."
+#~ msgstr "Définir une hauteur maximale en pixels."
+
+#~ msgid "Site Logo - Mobile"
+#~ msgstr "Logo du site - mobile"
+
+#~ msgid ""
+#~ "Specific version of the logo for mobile devices. If none, the default "
+#~ "logo will be used."
+#~ msgstr ""
+#~ "Version spécifique du logo pour appareils mobiles. Si non renseigné, le "
+#~ "logo par défaut sera utilisé."
+
+#~ msgid "Mobile logo height"
+#~ msgstr "Hauteur du logo mobile"
+
+#~ msgid "Hide the site title"
+#~ msgstr "Masquer le titre du site"
+
+#~ msgid "Hide the website tagline"
+#~ msgstr "Masquer le slogan du site"
+
+#~ msgid "Display search in toolbar"
+#~ msgstr "Afficher la recherche dans la barre d’outils"
+
+#~ msgid "Display high Contrast button in toolbar"
+#~ msgstr "Afficher un bouton de contraste élevé dans la barre d’outils"
+
+#~ msgid "Custom footer text"
+#~ msgstr "Texte de pied de page personnalisé"
+
+#~ msgid "Add a custom text instead of the year and blog name."
+#~ msgstr "Ajouter un texte personnalisé au lieu du nom de blog et de l’année."
+
+#~ msgid "Display WordPress Link"
+#~ msgstr "Afficher le lien WordPress"
+
+#~ msgid "Display a Back to top button"
+#~ msgstr "Afficher un bouton Haut de page"
+
+#~ msgid "Make the header sticky"
+#~ msgstr "Rendre l'en-tête collant"
+
+#~ msgid "Load new posts on click"
+#~ msgstr "Charger les nouveaux articles au clic"
+
+#~ msgid "Use Scrollout to animate blocks on scroll"
+#~ msgstr "Utilisez Scrollout pour animer les blocs au scroll"
+
+#~ msgid "Use Fancybox to enlarge pictures"
+#~ msgstr "Utilisez Fancybox pour agrandir les images"
+
+#~ msgid "Disable custom color palette"
+#~ msgstr "Désactiver la palette de couleurs personnalisée"
+
+#~ msgid "Disable custom font sizes"
+#~ msgstr "Désactiver les tailles de police personnalisées"
+
+#~ msgid "Enable custom logo"
+#~ msgstr "Activer le logo personnalisé"
+
+#~ msgid "Enable custom background"
+#~ msgstr "Activer l’arrière-plan personnalisé"
+
+#~ msgid "Enable custom header"
+#~ msgstr "Activer l’en-tête personnalisé"
+
+#~ msgid "Enable post formats"
+#~ msgstr "Activez les formats d’articles"
+
+#~ msgid "Enable Woocommerce support"
+#~ msgstr "Activer le support Woocommerce"
+
+#~ msgid "Blog introduction text"
+#~ msgstr "Texte d’introduction du blog"
+
+#~ msgid "Show the sidebar on the blog page"
+#~ msgstr "Afficher la barre latérale sur la page du blog"
+
+#~ msgid "Show the sidebar on single posts"
+#~ msgstr "Afficher la barre latérale sur les articles"
+
+#~ msgid "Show the category dropdown on the blog page"
+#~ msgstr "Afficher le sélecteur de catégories sur les pages du blog"
+
+#~ msgid "Excerpt lenght (number of words)"
+#~ msgstr "Longueur de l’extrait (nombre de mots)"
+
+#~ msgid "Show the publication date in post meta"
+#~ msgstr "Afficher la date de publication dans les post meta"
+
+#~ msgid "Show the author in post meta"
+#~ msgstr "Afficher l’auteur dans les post meta"
+
+#~ msgid "Show the category in post meta"
+#~ msgstr "Afficher la catégorie dans les post meta"
+
+#~ msgid ""
+#~ "Add basic social networks sharing buttons on single posts (Facebook, "
+#~ "Twitter, LinkedIn, e-mail)"
+#~ msgstr ""
+#~ "Ajouter des boutons de partage de base pour les réseaux sociaux sur les "
+#~ "articles (Facebook, Twitter, LinkedIn, e-mail)"
+
+#~ msgid "Enable post tags"
+#~ msgstr "Activer les étiquettes"
+
+#~ msgid "Layout version"
+#~ msgstr "Version de mise en page"
+
+#~ msgid "Version 1"
+#~ msgstr "Version 1"
+
+#~ msgid "Version 2"
+#~ msgstr "Version 2"
+
+#~ msgid "Child pages location"
+#~ msgstr "Emplacement des pages enfants"
+
+#~ msgid "Page banner"
+#~ msgstr "Bannière de page"
+
+#~ msgid "Sidebar"
+#~ msgstr "Barre latérale"
+
+#~ msgid "Do not display child pages"
+#~ msgstr "Ne pas afficher les pages enfants"
+
+#~ msgid "Display page description or post metas in the banner"
+#~ msgstr ""
+#~ "Afficher la description de la page ou les post metas dans la bannière"
+
+#~ msgid "Choose your fonts"
+#~ msgstr "Choisissez vos polices"
+
+#~ msgid "Barlow"
+#~ msgstr "Barlow"
+
+#~ msgid "Bebas & Bitter"
+#~ msgstr "Bebas & Bitter"
+
+#~ msgid "Playfair & Atkinson"
+#~ msgstr "Playfair & Atkinson"
+
+#~ msgid "Luciole"
+#~ msgstr "Luciole"
+
+#~ msgid "Miriam Libre & Asap"
+#~ msgstr "Miriam Libre & Asap"
+
+#~ msgid "Custom Child Theme Font"
+#~ msgstr "Police personnalisée du thème enfant"
+
+#~ msgid "Show background images in the banner"
+#~ msgstr "Afficher des images de fond dans la bannière"
+
+#~ msgid "Default banner"
+#~ msgstr "Bannière par défaut"
+
+#~ msgid ""
+#~ "Choose a default picture for the page banner. (2048 x 625 pixels max.)"
+#~ msgstr ""
+#~ "Choisissez une image par défaut pour la bannière de page. (2048 x 625 "
+#~ "pixels max.)"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Choose a picture for the blog banner. (2048 x 625 pixels max.)"
+#~ msgstr ""
+#~ "Choisissez une photo pour la bannière du blog. (2048 x 625 pixels max.)"
+
+#~ msgid "Choose a picture for the 404 error page. (2048 x 625 pixels max.)"
+#~ msgstr ""
+#~ "Choisissez une image pour la page d’erreur 404. (2048 x 625 pixels max.)"
+
+#~ msgid "Small"
+#~ msgstr "Petite"
+
+#~ msgid "Regular"
+#~ msgstr "Normale"
+
+#~ msgid "Medium"
+#~ msgstr "Moyenne"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#~ msgid "View details"
+#~ msgstr "Voir les détails"
+
+#, php-format
+#~ msgid "More information about %s"
+#~ msgstr "Plus d'informations sur %s"
+
+#~ msgid "Check for updates"
+#~ msgstr "Vérifier les mises à jour"
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "The %s plugin is up to date."
+#~ msgstr "L’extension %s est à jour."
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "A new version of the %s plugin is available."
+#~ msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "Could not determine if updates are available for %s."
+#~ msgstr ""
+#~ "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#, php-format
+#~ msgid "Unknown update checker status \"%s\""
+#~ msgstr "Statut inconnu du vérificateur de mise à jour \"%s\""
+
+#~ msgid "There is no changelog available."
+#~ msgstr "Il n’y a aucun historique des mises à jour disponible."
+
+#~ msgid "https://github.com/anybodesign/anybodesign"
+#~ msgstr "https://github.com/anybodesign/anybodesign"
+
+#~ msgid "A WordPress Starter Theme"
+#~ msgstr "Un starter thème pour WordPress"
 
 #~ msgid ""
 #~ "It looks like nothing was found at this location. Maybe try a search?"
@@ -891,9 +807,6 @@ msgstr "Maintenance"
 
 #~ msgid "Post Type Description"
 #~ msgstr "Description du Post Type"
-
-#~ msgid "Choose a title for this project"
-#~ msgstr "Choisissez un titre pour ce projet"
 
 #~ msgctxt "Taxonomy General Name"
 #~ msgid "Project types"
@@ -1054,17 +967,6 @@ msgstr "Maintenance"
 #~ msgid "Custom page template with Sidebar"
 #~ msgstr "Page avec colonne latérale"
 
-#~ msgctxt "Post Type General Name"
-#~ msgid "Portfolio"
-#~ msgstr "Portfolio"
-
-#~ msgctxt "Post Type Singular Name"
-#~ msgid "Portfolio"
-#~ msgstr "Portfolio"
-
-#~ msgid "Portfolio"
-#~ msgstr "Portfolio"
-
 #~ msgid "All Creations"
 #~ msgstr "Toutes les créations"
 
@@ -1079,13 +981,6 @@ msgstr "Maintenance"
 
 #~ msgid "Anybodesign Portfolio"
 #~ msgstr "Portfolio Anybodesign"
-
-#~ msgctxt "Taxonomy Singular Name"
-#~ msgid "Creation Category"
-#~ msgstr "Type de création"
-
-#~ msgid "Creation Category"
-#~ msgstr "Type de création"
 
 #~ msgid "Parent Creation Category"
 #~ msgstr "Type de création parent"

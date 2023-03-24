@@ -14,5 +14,5 @@
 						<?php echo esc_html(bloginfo('name')); ?><br>
 					</span>
 					<span class="logo-baseline">
-						<?php _e('Graphic<br>and Web Design<br>Workshop ', 'anybodesign'); ?>
+						<?php _e('Graphic<br>and Web Design<br>Workshop', 'anybodesign'); ?>
 					</span>
