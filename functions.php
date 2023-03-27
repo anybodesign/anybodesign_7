@@ -46,6 +46,21 @@ function fs_setup() {
 	
 	// Remove fucking patterns 
 	remove_theme_support( 'core-block-patterns' );
+	
+	// Remove SVG duotone
+	remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );	
+	
+	// Remove SVG and global styles
+	// remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
+	// 
+	// // Remove wp_footer actions which add's global inline styles
+	// remove_action('wp_footer', 'wp_enqueue_global_styles', 1);
+	// 
+	// // Remove render_block filters which adding unnecessary stuff
+	// remove_filter('render_block', 'wp_render_duotone_support');
+	// remove_filter('render_block', 'wp_restore_group_inner_container');
+	// remove_filter('render_block', 'wp_render_layout_support_flag');
+	
 }
 endif;
 add_action( 'after_setup_theme', 'fs_setup' );
@@ -544,7 +559,7 @@ if( class_exists('acf') ) {
 	}
 
 	//	ACF Options page
-	/*
+	
 	if (function_exists('acf_add_options_page')) {
 	    
 		add_action( 'init', 'fs_acf_add_options_page' );
@@ -559,22 +574,22 @@ if( class_exists('acf') ) {
 				'redirect'		=> false,
 				'position'		=> 30
 			));
-			acf_add_options_sub_page(array(
-				'page_title' 	=> esc_html__( 'Archives Customizer', 'anybodesign'),
-				'menu_title' 	=> esc_html__( 'Archives Customizer', 'anybodesign'),
-				'parent_slug' 	=> $parent['menu_slug'],
-				'menu_slug'		=> 'options-site-archives'
-			));	
-			acf_add_options_sub_page(array(
-				'page_title' 	=> esc_html__( 'Social Networks', 'anybodesign'),
-				'menu_title' 	=> esc_html__( 'Social Networks', 'anybodesign'),
-				'parent_slug' 	=> $parent['menu_slug'],
-				'menu_slug'		=> 'options-site-social'
-			));
+			// acf_add_options_sub_page(array(
+			// 	'page_title' 	=> esc_html__( 'Archives Customizer', 'anybodesign'),
+			// 	'menu_title' 	=> esc_html__( 'Archives Customizer', 'anybodesign'),
+			// 	'parent_slug' 	=> $parent['menu_slug'],
+			// 	'menu_slug'		=> 'options-site-archives'
+			// ));	
+			// acf_add_options_sub_page(array(
+			// 	'page_title' 	=> esc_html__( 'Social Networks', 'anybodesign'),
+			// 	'menu_title' 	=> esc_html__( 'Social Networks', 'anybodesign'),
+			// 	'parent_slug' 	=> $parent['menu_slug'],
+			// 	'menu_slug'		=> 'options-site-social'
+			// ));
 			
 		}
 	}
-	*/
+	
 	
 	// Translate ACF fields
 	/*	
