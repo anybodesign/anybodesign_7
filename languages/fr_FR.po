@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-03-24 15:36+0100\n"
-"PO-Revision-Date: 2023-03-24 15:36+0100\n"
+"POT-Creation-Date: 2023-03-24 18:23+0100\n"
+"PO-Revision-Date: 2023-03-24 18:24+0100\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -126,10 +126,6 @@ msgstr "Type de création"
 msgid "Creation Categories"
 msgstr "Types de créations"
 
-#: inc/subnav-walker.php:21
-msgid "Unfold Sub-Menu"
-msgstr "Déplier le sous-menu"
-
 #: template-parts/footer-back2top.php:3
 msgid "Back to top"
 msgstr "Haut de page"
@@ -138,9 +134,33 @@ msgstr "Haut de page"
 msgid "Powered by WordPress!"
 msgstr "Propulsé par WordPress !"
 
-#: template-parts/footer-social.php:4
+#: template-parts/footer-social.php:5
+msgid "Elsewhere,<br>at the same time…"
+msgstr "Ailleurs,<br>au même moment…"
+
+#: template-parts/footer-social.php:7
 msgid "Social Networks"
 msgstr "Réseaux sociaux"
+
+#: template-parts/footer-social.php:11
+msgid "Open Twitter in a new tab"
+msgstr "Ouvrir Twitter dans un nouvel onglet"
+
+#: template-parts/footer-social.php:18
+msgid "Open LinkedIn in a new tab"
+msgstr "Ouvrir LinkedIn dans un nouvel onglet"
+
+#: template-parts/footer-social.php:25
+msgid "Open Github in a new tab"
+msgstr "Ouvrir Github dans un nouvel onglet"
+
+#: template-parts/footer-social.php:32
+msgid "Open Cette nuit j’ai rêvé in a new tab"
+msgstr "Ouvrir Cette nuit j’ai rêvé dans un nouvel onglet"
+
+#: template-parts/footer-social.php:39
+msgid "Open What A Sketch in a new tab"
+msgstr "Ouvrir What A Sketch dans un nouvel onglet"
 
 #: template-parts/header-brand-logo.php:19
 msgid "Graphic<br>and Web Design<br>Workshop"
@@ -150,7 +170,7 @@ msgstr "Atelier<br>de création graphique<br>& web design"
 msgid "Go to Home Page"
 msgstr "Aller à la page d'accueil"
 
-#: template-parts/header-nav.php:9
+#: template-parts/header-nav.php:8
 msgid "Menu"
 msgstr "Menu"
 
@@ -269,6 +289,9 @@ msgstr "https://anybodesign.com/"
 #. Template Name of the plugin/theme
 msgid "Maintenance"
 msgstr "Maintenance"
+
+#~ msgid "Unfold Sub-Menu"
+#~ msgstr "Déplier le sous-menu"
 
 #~ msgid "Secondary navigation"
 #~ msgstr "Navigation secondaire"

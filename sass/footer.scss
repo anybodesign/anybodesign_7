@@ -5,12 +5,18 @@
 
 #site_foot {
 	position: relative;
-	background-color: var(--footer_color);
+	background: var(--footer_color) url(img/ui/pattern2.png) center center no-repeat;
+	background-size: cover;
 }
 
 .footer-social {
 	width: 100%;
 	padding: 1rem;
+	margin-bottom: 4rem;
+	
+	.widget-title {
+		margin-bottom: 2rem;
+	}
 }
 
 .footer-widgets {

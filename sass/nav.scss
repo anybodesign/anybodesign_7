@@ -291,22 +291,53 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	//margin-left: -1.6rem;
 	
 	& > li {
-		margin-right: 1rem;
+		margin-left: -1.6rem;
 		
 		a {
 			display: block;
-			transition: .2s ease-in-out;
 			text-decoration: none;
 			
-			img + span {
+			svg + span {
 				@include a11y-hidden();
-			} 
+			}
+			
+			svg {
+				display: block;
+				width: 7.3rem;
+				height: 6.4rem;
+				
+				path {
+					transition: .2s ease-in-out;
+					transform-origin: center; 					
+				}
+			}
+			
+			svg path.stain {
+				opacity: 0;
+				transform: rotate(45deg);
+			}
+			svg path.square {
+				opacity: 1;
+			}
 			
 			&:focus,
 			&:hover {
-				transform: translateY(-.5rem);
+				
+				svg path.stain {
+					opacity: 1;
+					transform: rotate(0);
+				}
+				svg path.square {
+					opacity: 0;
+					transform: scale(.8);
+				}
+				svg path.icon {
+					fill: var(--text_color);
+				}
+				
 			}
 		}
 	}
