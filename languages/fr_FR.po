@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-03-24 18:23+0100\n"
-"PO-Revision-Date: 2023-03-24 18:24+0100\n"
+"POT-Creation-Date: 2023-03-27 12:46+0200\n"
+"PO-Revision-Date: 2023-03-27 12:47+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -40,7 +40,7 @@ msgstr "Ajouter mon commentaire !"
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:276 template-parts/footer-copyright.php:12
+#: functions.php:276 template-parts/footer-copyright.php:11
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
@@ -93,6 +93,10 @@ msgstr "Répondre"
 msgid "Edit"
 msgstr "Modifier"
 
+#: functions.php:554 functions.php:555
+msgid "Site Options"
+msgstr "Options du site"
+
 #: inc/anybodesign-cpt.php:35
 msgctxt "Post Type General Name"
 msgid "Portfolio"
@@ -130,7 +134,7 @@ msgstr "Types de créations"
 msgid "Back to top"
 msgstr "Haut de page"
 
-#: template-parts/footer-copyright.php:8
+#: template-parts/footer-copyright.php:7
 msgid "Powered by WordPress!"
 msgstr "Propulsé par WordPress !"
 
@@ -877,9 +881,6 @@ msgstr "Maintenance"
 
 #~ msgid "Primary Widgets Area"
 #~ msgstr "Zone primaire Widgets"
-
-#~ msgid "Site Options"
-#~ msgstr "Options du site"
 
 #~ msgid "Archives Customizer"
 #~ msgstr "Personnalisation des pages d’archives"
