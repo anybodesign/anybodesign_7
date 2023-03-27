@@ -4,8 +4,7 @@
 					
 					<p>
 						<?php echo esc_html('&copy;'); echo date(' Y '); echo esc_html(bloginfo('name')).'.'; ?>
-						
-						<a class="wp-love" href="//wordpress.org"><?php esc_html_e('Powered by WordPress!', 'anybodesign'); ?></a>
+						<?php esc_html_e('Powered by WordPress!', 'anybodesign'); ?>
 					</p>
 					
 					<?php if ( has_nav_menu( 'footer_menu' ) ) : ?>
