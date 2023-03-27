@@ -5,8 +5,12 @@
 
 #site_head {
 	position: relative;
-	background-color: var(--header_color);
+	background-color: #fff;
 	margin-bottom: 2rem;
+	
+	.home & {
+		margin-bottom: 0;
+	}
 	
 	& > .row {
 		flex-direction: column;
@@ -15,15 +19,23 @@
 		
 		@include rwd(large) {
 			flex-direction: row;
-			justify-content: space-between;	
+			justify-content: space-between;
+			
+			.home:not(.sticky-nav) & {
+				align-items: flex-start;
+			}	
 		}
 		
 	}
 }
 
-.site-brand,
-.site-nav {
+.site-brand {
 	padding: 1rem;
+}
+.site-nav {
+	@include rwd(large) {
+		padding: 1rem;
+	}
 }
 
 .site-title {
@@ -42,18 +54,37 @@
 		}
 	}
 	
-	a {
+	& a {
 		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			svg {
+				transform: scale(1.05) rotate(3deg);
+			}
+			@include rwd(large) {
+				.logo-baseline {
+					padding-left: .5rem;
+				}
+			}
+		}
 	}
 	svg {
 		display: block;
 		width: 14.7rem;
 		height: 12.8rem;
+		transition: transform .4s ease-in-out;
 		
 		@include rwd(large) {	
-			margin-left: -5.4rem;
 			width: 19.5rem;
 			height: 17rem;
+			margin-left: -5.4rem;
+			
+			.home & {
+				width: 26.4rem;
+				height: 23rem;
+				margin-left: -7.6rem;
+			}
 		}
 	}
 	
@@ -71,10 +102,18 @@
 			text-align: left;
 			font-size: 1.8rem;
 			letter-spacing: 0;
-			line-height: 1.1;
+			transition: padding .3s ease-in-out;
+			
+			.home & {
+				font-size: 2.2rem;
+			}
 		}
 	}
 
+}
+
+.site-intro {
+	
 }
 
 	
@@ -84,6 +123,7 @@
 .sticky-nav {
 
 	@include rwd(large) {
+		
 		#site_head {
 			position: fixed;
 			width: 100%;
@@ -96,6 +136,7 @@
 			
 			
 		}
+		
 		.site-brand {
 			position: fixed;
 			left: 0;
@@ -108,12 +149,15 @@
 				margin-left: 0;
 			}
 		}
+		
 		.logo-baseline {
 			@include a11y-hidden();
 		}
+		
 		.site-nav {
 			padding: 2.5rem 0;
 		}
+		
 		.main-menu {
 			position: fixed;
 			left: 0;
@@ -123,6 +167,7 @@
 			padding-right: 2.5rem;
 			justify-content: flex-end;
 			background-color: rgba(255, 255, 255, 0.75);
+			backdrop-filter: blur(.8rem);
 			//box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.20);
 			//border-bottom: #c0c0c0 1px dotted;
 		}
