@@ -32,9 +32,16 @@
 .site-brand {
 	padding: 1rem;
 }
+
 .site-nav {
+	
 	@include rwd(large) {
 		padding: 1rem;
+		
+		.home:not(.sticky-nav) & {
+			position: absolute;
+			right: 0;
+		}
 	}
 }
 
@@ -170,6 +177,10 @@
 			backdrop-filter: blur(.8rem);
 			//box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.20);
 			//border-bottom: #c0c0c0 1px dotted;
+		}
+		
+		.scroll-down {
+			display: none;
 		}
 		
 		&.admin-bar {
