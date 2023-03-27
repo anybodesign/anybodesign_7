@@ -66,8 +66,8 @@
 		background-size: 100% 200%;
 	}
 	&:focus {
-		background-color: var(--text_color);
-		color: #fff;
+		background-color: $color;
+		color: $text;
 		background-image: none;
 		font-family: var(--font_bold);
 	}
