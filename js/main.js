@@ -18,44 +18,12 @@ jQuery(document).ready(function($) {
 	});
 
 		$(window).resize(function() {
-			if ($(window).width() > 960) {
+			if ($(window).width() > 996) {
 		    	$('.main-menu').show().removeAttr('style').removeAttr('aria-hidden');
 		    	$('.sub-menu').show().removeAttr('style');
 		    	$('#menu_toggle').removeClass('menu-opened').removeAttr('aria-expanded');
 			}
 		});
-	
-	
-	// Sub-Menus Toggle Button
-	
-	$('.sub-menu-unfold').click(function() {
-		
-	    if($(this).hasClass('sub-menu-opened')) {
-	        $(this).removeClass('sub-menu-opened').attr('aria-expanded','false');
-			$(this).next('.sub-menu').hide().attr('aria-hidden','true');
-
-	    } else {
-
-			$(this).parent().parent().find('.sub-menu-opened').removeClass('sub-menu-opened');
-	        $(this).addClass('sub-menu-opened').attr('aria-expanded','true');
-	        $(this).next('.sub-menu').removeAttr('style').attr('aria-hidden','false');
-	    }
-	});
-	
-	$('.sub-menu-unfold').on('focus', function () {
-		$(this).parent().addClass('unfold-parent');
-	});
-	$('.sub-menu-unfold').on('focusout', function () {
-		$(this).parent().removeClass('unfold-parent');
-	});
-
-
-	// Leave focus
-	
-	$('.main-menu > .menu-item > a:not([href="#"])').on('focus', function () {
-		$('.sub-menu-unfold').removeClass('sub-menu-opened').attr('aria-expanded','false');
-		$('.sub-menu').hide().attr('aria-hidden','true');
-	});
 	
 	
 	// A11y active label on nav items
@@ -68,23 +36,6 @@ jQuery(document).ready(function($) {
 	}
 	
 	$($el).append('<span class="a11y-hidden"> - '+$lang+'</span>');
-
-
-	// Toggle class focus on <li>
-
-	$('.menu-item > a').on('focus', function () {
-		$(this).parent().next().removeClass('focus');
-		$(this).parent().prev().removeClass('focus');
-		$(this).parent().addClass('focus');
-	});
-	
-	$('.sub-menu > li > a').on('focus', function () {
-		$(this).parent().parent().parent().addClass('focus');
-	});	
-	
-	$('.menu-item:first-child > a').on('focusout', function () {
-		$(this).parent().removeClass('focus');
-	});
 
 
 	// Toggle sidebar
@@ -130,6 +81,23 @@ jQuery(document).ready(function($) {
 	$(window).on('scroll',function() {		
 		back2top();
 	});
+	
+	// Scroll Down
+	
+	function scrollDown(anchorID) {
+		
+		var target = $(anchorID);
+		var targetSpeed = 1000;
+		
+		$('html,body').animate({scrollTop: target.offset().top}, targetSpeed);
+	}
+
+	$('.scroll-down').on('click', function() {
+		var targetID = '#site_main';
+		scrollDown( targetID );
+		
+		return false;
+	});	
 	
 	
 	// Responsive Video Players (Youtube, Vimeo)
