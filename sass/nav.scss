@@ -161,6 +161,13 @@
 				transform: rotate(0);
 			}
 		}
+		&.current-menu-item > a,
+		&.current_page_parent > a {
+			// svg.menu-item-stain {
+			// 	opacity: 1;
+			// 	transform: rotate(0);
+			// }
+		}
 		
 	}
 }
@@ -222,7 +229,7 @@
 	}
 	
 	@include rwd(large) {
-		display: none;				
+		display: none;
 	}
 }
 
