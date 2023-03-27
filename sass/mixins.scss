@@ -34,9 +34,9 @@
 		$text: var(--text_color);
 	}
 	
-	border-radius: $radius;
 	text-decoration: none;
 	padding: .25rem;
+	padding-bottom: .35rem;
     background-image:
 		linear-gradient(
 			transparent 0,
@@ -49,6 +49,11 @@
     background-repeat: no-repeat;
 	transition: .2s ease-in-out;
 	
+	&:hover,
+	&:focus {
+		border-radius: $radius;
+		//padding-bottom: .25rem;
+	}
 	&:hover {
 		color: $text;
 		background-image:
