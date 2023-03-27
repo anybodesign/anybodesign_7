@@ -32,12 +32,7 @@ h1, h2, h3, h4, h5, h6,
 	}
 	i, em {
 		font-style: normal;
-	}
-
-	.white-text & {
-		color: #fff;
-	}
-		
+	}	
 }
 
 h1, 
@@ -155,8 +150,7 @@ p a[target="_blank"]::after {
 			@include link-style();
 		}
 	}
-	.has-text-background-color p,
-	.white-text p {
+	.has-text-background-color p {
 		a:not([class*="-btn"]) {
 			@include link-style(white);
 		}

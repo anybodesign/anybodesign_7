@@ -154,10 +154,6 @@
 		
 		circle {
 			fill: var(--text_color);
-			
-			.white-text & {
-				fill: #fff;
-			}
 		}
 	}
 }
@@ -190,11 +186,6 @@
 		
 		text-align: center;
 		line-height: 3.4rem;
-		
-		.white-text & {
-			background-color: #fff;
-			color: var(--text_color);
-		}
 	}
 	a {
 		text-decoration: none;
@@ -208,10 +199,6 @@
 	}
 	.current {
 		background-color: var(--primary_color);
-
-		.white-text & {
-			background-color: var(--primary_color);
-		}
 	}
 	
 	.pages {
@@ -246,14 +233,6 @@
 		&:hover::after,
 		&:focus::after {
 			width: 100%;
-		}
-
-		.white-text & {
-			color: #fff;
-			
-			&::after {
-				border-top-color: #fff;
-			}
 		}
 	}
 }
