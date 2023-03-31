@@ -47,7 +47,7 @@
 	width: 100vw;
 	height: 100vh;
 	padding: 6rem 3rem;
-	background-color: #9CFF2E80;	//80 = 50%
+	background-color: var(--accent_alpha50);
 	backdrop-filter: blur(.8rem);
 	
 	transform: translateX(110%);
