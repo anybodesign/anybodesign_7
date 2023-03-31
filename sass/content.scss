@@ -101,25 +101,10 @@
 		max-width: none;
 	}
 	
-	// Beaver container
-	& > *.fl-builder-content {
-		margin-left: 0;
-		margin-right: 0;
-		max-width: none;
-		padding: 0;
-	}
-	
 	& > [class*="wp-block-gallery"],
 	& > [class*="wp-block-cover-image"],
 	& > [class*="wp-block-quote"] {
 		@include center();
-		margin-bottom: 2rem;
-	}
-	& > [class*="wp-block-table"],
-	& > [class*="wp-block-verse"] {	
-		position: relative;
-		margin: 2rem auto;
-		max-width: calc(#{$max-width} - #{1rem}*2);
 	}
 	
 	& > span {

@@ -44,7 +44,7 @@
 			$color 0.8rem,
 			$color 1rem
 		);
-    background-size: 100% 1.1rem;
+    background-size: 100% 1rem;
     background-position: 0 bottom;
     background-repeat: no-repeat;
 	transition: .2s ease-in-out;
@@ -52,7 +52,6 @@
 	&:hover,
 	&:focus {
 		border-radius: $radius;
-		//padding-bottom: .25rem;
 	}
 	&:hover {
 		color: $text;
@@ -74,8 +73,8 @@
 	&:active {
 		color: var(--secondary_color);
 	}
-	&:focus:visited {
-		color: #fff;
+	&:visited {
+		font-family: var(--font_italic);
 	}	
 }
 

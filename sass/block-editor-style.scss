@@ -64,12 +64,11 @@ html.interface-interface-skeleton__html-container {
 .edit-post-visual-editor .wp-block,
 .block-editor-block-list__layout {
 	
-	// Import custom block styles in admin
 	@import 'typography.scss';
 	@import 'buttons.scss';
-	@import 'posts.scss';	
-	@import 'blocks.scss';
-	@import 'forms-custom.scss';
+	//@import 'posts.scss';	
+	//@import 'blocks.scss';
+	//@import 'forms-custom.scss';
 
 	h1, h2, h3, h4, h5, h6,
 	.h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
@@ -89,6 +88,8 @@ html.interface-interface-skeleton__html-container {
 		font-family: 'tinymce', Arial;
 	}
 	
+	// Blocks CSS fix
+	
 	figure {
 		width: 100%;
 		
@@ -96,69 +97,50 @@ html.interface-interface-skeleton__html-container {
 			max-width: 96% !important;
 			height: auto;
 		}
+	}
+	
+	.wp-block-group > .wp-block-group__inner-container {
+		@include center();
+		padding: 1rem;
+	}
+	
+	.wp-block-group,
+	.wp-block-columns,
+	.wp-block-column {
+		position: relative;
+		padding: 1.5rem;
+		border: #515151 1px solid;
+		
+		&::before {
+			display: block;
+			position: absolute;
+			bottom: -1px;
+			left: -1px;
+			background: #515151;
+			color: #FFF;
+			font-size: .85rem;
+			text-transform: uppercase;
+			padding: 0 .5rem;
+		}
+	}
+	.wp-block-columns {
+		padding-bottom: 3rem;
+	}
+	.wp-block-column {
+		border-style: dashed;
+	}
+	
+	.wp-block-group::before {
+		content: 'Group';
+	}
+	.wp-block-columns::before {
+		content: 'Columns';
+	}
+	.wp-block-column::before {
+		content: 'Column';
+	}
+	
+	.wp-block-separator {
+		padding-top: 2rem;
 	}	
-}
-
-// Blocks
-
-.wp-block-group,
-.wp-block-columns,
-.wp-block-column {
-	position: relative;
-	padding: 1.5rem;
-	border: #515151 1px solid;
-	
-	&::before {
-		display: block;
-		position: absolute;
-		bottom: -1px;
-		left: -1px;
-		background: #515151;
-		color: #FFF;
-		font-size: .85rem;
-		text-transform: uppercase;
-		padding: 0 .5rem;
-	}
-}
-.wp-block-columns {
-	padding-bottom: 3rem;
-}
-.wp-block-column {
-	border-style: dashed;
-}
-
-.wp-block-group::before {
-	content: 'Group';
-}
-.wp-block-columns::before {
-	content: 'Columns';
-}
-.wp-block-column::before {
-	content: 'Column';
-}
-
-
-
-// TinyMCE Custom
-	
-	
-p.text-intro {
-	font-size: 1.75em !important;
-	
-	.wp-block & {
-		font-size: 1.25em !important
-	}
-}
-p.text-mentions {
-	font-size: 0.8em !important;
-	
-	.wp-editor-container & {
-		font-size: 1em !important
-	}
-}
-a.action-btn {
-	background-color: var(--primary_color);
-	//color: #fff !important;
-	padding: 5px 15px;
-	text-decoration: none;
 }
