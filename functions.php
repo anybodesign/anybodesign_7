@@ -11,6 +11,13 @@ define( 'FS_THEME_URL', get_template_directory_uri() );
 if ( ! isset( $content_width ) )
 	$content_width = 2048;
 
+// COLORS 
+
+$primary = '#222629';
+$secondary = '#616F39';
+$accent = '#9CFF2E';
+$text_color = '#222629';
+$bg = '#EFF3DC';
 
 if ( ! function_exists( 'fs_setup' ) ) :
 
@@ -36,6 +43,73 @@ function fs_setup() {
 	));
 
 	add_theme_support( 'customize-selective-refresh-widgets' );
+	
+	global $primary;
+	global $secondary;
+	global $accent;
+	global $text_color;
+	global $bg;
+	
+	add_theme_support( 'editor-color-palette', array(
+	    
+	   array(
+	        'name' => esc_html__( 'Primary color', 'anybodesign' ),
+	        'slug' => 'primary',
+	        'color' => $primary,
+	    ),
+	    array(
+	        'name' => esc_html__( 'Secondary color', 'anybodesign' ),
+	        'slug' => 'secondary',
+	        'color' => $secondary,
+	    ),
+	    array(
+	        'name' => esc_html__( 'Accent color', 'anybodesign' ),
+	        'slug' => 'accent',
+	        'color' => $accent,
+	    ),
+		array(
+			'name' => esc_html__( 'Text color', 'anybodesign' ),
+			'slug' => 'text',
+			'color' => $text_color,
+		),
+	    array(
+	        'name' => esc_html__( 'Background color', 'anybodesign' ),
+	        'slug' => 'bg',
+	        'color' => $bg,
+	    ),
+		array(
+	        'name' => esc_html__( 'White', 'anybodesign' ),
+	        'slug' => 'white',
+	        'color' => '#fff',
+	    ),
+	    
+	));
+	
+	add_theme_support( 'editor-font-sizes', array(
+    	array(
+        	'name' => __( 'Small', 'anybodesign' ),
+        	'size' => 14,
+        	'slug' => 'small'
+    	),
+		array(
+        	'name' => __( 'Regular', 'anybodesign' ),
+        	'size' => 16,
+        	'slug' => 'regular'
+    	),
+		array(
+        	'name' => __( 'Medium', 'anybodesign' ),
+        	'size' => 18,
+        	'slug' => 'medium'
+    	),
+    	array(
+        	'name' => __( 'Large', 'anybodesign' ),
+        	'size' => 22,
+        	'slug' => 'large'
+    	),
+	));
+	
+	add_theme_support( 'disable-custom-font-sizes' );	
+	add_theme_support( 'disable-custom-colors' );
 
 	// Gutenberg support 
 	add_theme_support( 'align-wide' );
