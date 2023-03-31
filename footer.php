@@ -14,6 +14,7 @@
 		
 	<?php if ( ! is_page_template( 'pagecustom-maintenance.php' ) ) { ?>
 		
+		<hr class="pre-footer wp-block-separator is-style-dots has-secondary-background-color">
 		<footer role="contentinfo" id="site_foot">
 			<div class="row inner">
 				<?php
