@@ -82,18 +82,20 @@ jQuery(document).ready(function($) {
 		back2top();
 	});
 	
+	
 	// Scroll Down
 	
 	function scrollDown(anchorID) {
 		
 		var target = $(anchorID);
 		var targetSpeed = 1000;
+		var targetOffset = 90;
 		
-		$('html,body').animate({scrollTop: target.offset().top}, targetSpeed);
+		$('html,body').animate({scrollTop: target.offset().top - targetOffset}, targetSpeed);
 	}
 
 	$('.scroll-down').on('click', function() {
-		var targetID = '#site_main';
+		var targetID = '#front_page_content';
 		scrollDown( targetID );
 		
 		return false;

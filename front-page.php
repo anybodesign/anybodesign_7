@@ -28,7 +28,7 @@ get_header(); ?>
 					</div>
 					
 					
-					<div class="page-content">
+					<div class="page-content" id="front_page_content">
 					<?php while ( have_posts() ) : the_post();
 						the_content();
 					endwhile; ?>
