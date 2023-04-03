@@ -42,7 +42,7 @@ class AD_CPT {
 			'slug'                  => 'portfolio',
 			'with_front'            => true,
 			'pages'                 => true,
-			'feeds'                 => false,
+			'feeds'                 => true,
 		);
 		$args = array(
 			'label'                 => __( 'Portfolio', 'anybodesign' ),
@@ -65,7 +65,7 @@ class AD_CPT {
 			'capability_type'       => 'post',
 			'show_in_rest'          => true,
 		);
-		register_post_type( 'portfolio', $args );
+		register_post_type( 'projet', $args );
 	}
 	
 
