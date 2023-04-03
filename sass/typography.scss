@@ -20,8 +20,9 @@ h1, h2, h3, h4, h5, h6,
 	color: var(--primary_color);
 	font-family: var(--font_title);
 	font-weight: normal;
+	letter-spacing: -.15rem;
 	line-height: 1;
-	margin: 1em 0;
+	margin: .75em 0;
 
 	
 	b, strong {
@@ -34,14 +35,14 @@ h1, h2, h3, h4, h5, h6,
 
 h1, 
 .h1-like {
-    font-size: 3.8rem;
+    font-size: 4.8rem;
 	
 	&:first-child {
 		margin-top: 0;
 	}
 	
 	@include rwd(large) {
-		font-size: 4rem;
+		font-size: 7.2rem;
 	}
 }
 h2, 
@@ -218,8 +219,11 @@ img {
 figure {
 	position: relative;
 	margin: 0 0 1rem 0;
-	overflow: hidden;
+	background-color: var(--accent_color);
 	
+	@include img-opacity();
+	
+	a,
 	img {
 		display: block;
 	}
@@ -230,9 +234,14 @@ figure {
 	img.noborder {
 		border: 0;
 	}
+	
+	// With links
+	
+	
 }
 
 figcaption {
+	position: absolute;
 	font-size: 1.3rem; 
 	line-height: 1;
 	margin: 1rem 0;
@@ -240,7 +249,8 @@ figcaption {
 	color: #fff;
 	padding: .25rem .5rem;
 	display: inline-block;
-	transform: translate(1rem, -100%);
+	left: 1rem;
+	bottom: -.5rem;
 	max-width: 25rem;
 }
 
@@ -335,7 +345,7 @@ hr,
 			}
 			@include rwd(wide) {
 				width: calc( (100% - #{$max-width}) );
-				max-width: none;
+				max-width: 50rem;
 			}
 			
 			&::before {
@@ -468,7 +478,7 @@ pre {
 }
 mark {
 	padding: 1rem;
-	background: rgba(255, 255, 0, .9); // Transparent yellow
+	background: var(--accent_alpha50);
 }
 
 

@@ -124,13 +124,18 @@
 // Opacity effect on hovered images links
 
 @mixin img-opacity($opacity: .7) {
-	a img {
-		transition: opacity .2s ease-in-out;
+	a {
+		img {
+			transition: opacity .2s ease-in-out;
+		}
+		
+		&:hover,
+		&:focus {
+			img {
+				opacity: $opacity;
+			}
+		}
 	}
-	a:hover img,
-	a:focus img {
-		opacity: $opacity;
-	}	
 }
 
 // Add a pointer on ::before or ::after

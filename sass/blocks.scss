@@ -145,32 +145,17 @@
 		margin: 0;
 	}
 
-	@include rwd(medium) {
+	@include rwd(large) {
 		display: flex;
-
+		
 		.wp-block-column {
-			margin: 0 1rem;
-
+			margin: 0 2rem;
+			
 			&:first-child {
 				margin-left: 0;
 			}
 			&:last-child {
 				margin-right: 0;
-			}
-		}
-		&.columns-2 {
-			.wp-block-column {
-				width: 50%;
-			}
-		}
-		&.columns-3 {
-			.wp-block-column {
-				width: 33.3333%;
-			}
-		}
-		&.columns-4 {
-			.wp-block-column {
-				width: 25%;
 			}
 		}
 	}
@@ -190,70 +175,11 @@
 	&:not([class*="is-resized"]) img {
 		width: 100%; 
 		height: auto;
+	}
+	
+	figcaption {
+		margin: 0;
 	}	
-}
-
-
-// Latest posts & Categories
-
-.wp-block-archives-list,
-.wp-block-categories-list,
-.wp-block-latest-posts__list {
-	
-	.page-content > & {
-		padding-left: 1rem;
-	}	
-	
-	li {
-		margin-left: 0;
-		border-bottom: var(--text_color) 1px solid;
-		
-		&:first-child {
-			border-top: var(--text_color) 1px solid;
-		}
-			
-		a {
-			padding: 1rem 0;
-			text-decoration: none;
-			transition: .2s ease-in-out;
-			
-			&:hover,
-			&:focus {
-				padding-left: 1rem;
-				padding-right: 1rem;
-				background-color: var(--primary_color);
-				color: #fff;
-			}
-		}
-	}
-	
-	&.is-grid {
-		li {
-			margin-bottom: 0;
-			
-			&:first-child {
-				border-top: 0;
-			}
-		}
-	}
-}
-.wp-block-latest-posts__list {
-	li {
-		a {
-			display: block;
-		}
-	}
-}
-
-.wp-block-archives-list,
-.wp-block-categories-list {
-	list-style: none;
-	
-	li {
-		a {
-			display: inline-block;
-		}
-	}
 }
 
 
@@ -273,33 +199,18 @@
 	}
 	
 	.wp-block-media-text__content {
-		padding: 0 4rem;
+		padding: 0 2rem;
 	}
 	
-	&.has-media-on-the-right {
-		
-		.wp-block-media-text__content {
-			padding-left: 0;
+	@include rwd(large) {
+		&.has-media-on-the-right {
+			
+			.wp-block-media-text__content {
+				padding-left: 0;
+			}
 		}
 	}
 }
-
-// Gallery
-
-.wp-block-gallery {
-	.page-content > & {
-		padding-left: 1rem;
-	}
-	
-	.blocks-gallery-image,
-	.blocks-gallery-item { 
-		figcaption {
-			padding: 1rem;
-			background-color: var(--text_color);
-		}
-	}
-	
-}  
 
 
 // ACF Blocks Stuff

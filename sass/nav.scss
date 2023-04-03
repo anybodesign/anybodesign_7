@@ -154,8 +154,16 @@
 				transform: rotate(25deg);
 				z-index: -1;
 				
+				path {
+					fill: #fff;
+				}
+				
 				@include rwd(large) {
 					right: -3rem;
+					
+					path {
+						fill: var(--accent_color);
+					}
 					
 					.home:not(.sticky-nav) & {
 						width: 21rem;
@@ -188,20 +196,20 @@
 		& > a:focus,
 		&.current-menu-item > a,
 		&.current_page_parent > a {
-			background-color: var(--accent_color);
+			background-color: #fff;
 			
 			svg.menu-item-star,
 			svg.menu-item-stain {
 				opacity: 1;
 				transform: rotate(0);
 			}
+			@include rwd(large) {
+				background-color: var(--accent_color);
+			}
 		}
+		
 		&.current-menu-item > a,
 		&.current_page_parent > a {
-			// svg.menu-item-stain {
-			// 	opacity: 1;
-			// 	transform: rotate(0);
-			// }
 		}
 		
 	}
