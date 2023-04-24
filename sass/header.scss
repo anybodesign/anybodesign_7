@@ -30,7 +30,9 @@
 }
 
 .site-brand {
+	position: relative;
 	padding: 1rem;
+	z-index: 100;
 }
 
 .site-nav {
@@ -132,16 +134,14 @@
 	@include rwd(large) {
 		
 		#site_head {
-			position: fixed;
+			position: fixed !important;
 			width: 100%;
 			top: 0;
 			left: 0;
 			background-color: transparent;
 			
 			animation: drop_in .8s;
-			z-index: 100;		
-			
-			
+			z-index: 100;
 		}
 		
 		.site-brand {

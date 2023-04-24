@@ -15,10 +15,10 @@ function stickyhead() {
 	if (window.innerWidth > 959) {
 		if (window.pageYOffset > window.innerHeight/1.5) {
 			body.classList.add('sticky-nav');
-			body.setAttribute('style', 'padding-top:'+head_height+'px;');
+			//body.setAttribute('style', 'padding-top:'+head_height+'px;');
 		} else {
 			body.classList.remove('sticky-nav');
-			body.removeAttribute('style');
+			//body.removeAttribute('style');
 		}
 	}
 	

@@ -42,12 +42,28 @@
 		margin: 5rem auto !important;
 		max-width: 50rem;
 	}
+	
+	// head
+	
+	@include rwd(large) {
+		
+		#site_head {
+			position: absolute;
+			width: 100%;	
+		}
+	}
+	
 }
 
 .site-intro {
 	position: relative;
 	background-color: #fff;
 	z-index: 1;
+	
+	@include rwd(large) {
+		height: 100vh;
+		width: 100vw;
+	}
 	
 	.site-intro-content {
 		position: absolute;
@@ -88,6 +104,12 @@
 		@include rwd(medium) {
 			height: 50rem;
 		}
+		@include rwd(large) {
+			position: absolute;
+			left: auto;
+			bottom: 0;
+			width: 100%;
+		}
 		
 		svg {
 			position: relative;
@@ -117,7 +139,7 @@
 	@include rwd(large) {
 		display: block;
 		position: absolute;
-		bottom: -4rem;
+		bottom: -6rem;
 		right: 15rem;
 		padding: 0;
 		background: transparent;
