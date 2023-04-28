@@ -83,6 +83,7 @@
 		width: 14.7rem;
 		height: 12.8rem;
 		transition: transform .4s ease-in-out;
+		//animation: rotate_5 .5s ease-in-out;
 		
 		@include rwd(large) {	
 			width: 19.5rem;

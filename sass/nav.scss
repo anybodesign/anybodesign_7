@@ -295,7 +295,8 @@
 
 .breadcrumbs-nav {
 	position: relative;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
+	background-color: var(--bg_color);
 	
 	&::before {
 		content: '';
@@ -305,34 +306,50 @@
 		height: calc(100% - .2rem);
 		top: 0; 
 		right: 0;
-		background-image: linear-gradient(to left, #fff 0%, #fff 5%, rgba(255, 255, 255, 0) 100%);
+		background-image: linear-gradient(to left, var(--bg_color) 0%, var(--bg_color) 5%, rgba(255, 255, 255, 0) 100%);
 		pointer-events: none;
 		z-index: 5;
 	}
 	
-	.inner {
+	ul {
 		padding: 1rem;
 		padding-right: 7rem;
+		display: flex;
+		@include center();
 		
 		overflow: hidden;
 		overflow-x: auto;
 		white-space: nowrap;
 		
+		li {
+			font-size: 1.4rem;
+			margin-right: .5rem;
+			
+			&::after {
+				content: ' › ';
+				margin-left: .25rem;
+			}
+			
+			a {
+				@include link-style();
+			}
+			
+			&:first-child {
+				font-family: var(--font_italic);
+			}
+			&:last-child::after {
+				content: none;
+			}
+		}
+		
 		@include rwd(large) {
 			padding-right: 1rem;
+			
+			&::before {
+				content: none;
+			}
 		}
-	}
-	
-	span {
-		font-size: 1.4rem;
-		
-		a {
-			@include link-style();
-		}
-	}
-	.current-item {
-		font-family: var(--font_italic);
-	}
+	}	
 }
 
 // Social items
