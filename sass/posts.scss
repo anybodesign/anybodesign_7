@@ -125,9 +125,45 @@
 /* = Singles
 /* ------------------------- */
 
-.single-post {
+
+.featured-image-container {
+	display: none;
 	
+	@include rwd(medium) {
+		display: block;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		z-index: 100;
+		width: 40rem;
+		height: 45rem;
+		pointer-events: none;
+		background: transparent url(img/ui/stain-single.svg) 99% 2px no-repeat;
+		background-size: contain;
+		
+		
+		.featured-image {
+			width: 100%;
+			height: 100%;
+			
+			background-size: cover;
+			background-position: left center;
+			background-repeat: no-repeat;
+			
+			mask-image: url(img/ui/stain-single.svg);
+			mask-size: contain;
+			mask-repeat: no-repeat;
+			mask-position: bottom right;
+		}
+	}
+	
+	@include rwd(large)	{
+		width: 74rem;
+		height: 65rem;
+	}
 }
+
 
 /* ------------------------- */
 /* = Pagination

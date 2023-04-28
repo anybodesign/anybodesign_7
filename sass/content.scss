@@ -26,29 +26,76 @@
 }
 
 .page-banner {
-	margin-bottom: 2rem;
-	
-	.banner-has-bg & {
-		min-height: 20rem;
-		background-color: var(--bg_color);
-		background-size: cover;
-		background-position: center center;
-		
-		@include rwd(medium) {
-			min-height: 29rem;
-		}
-	}
-	
+
 	.inner {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 2rem 1rem;
+		padding: 1rem;
+		margin-bottom: 2rem;
 	}
 	
 	.page-title {
 		margin-bottom: 0;
+		font-size: 3.2rem;
+		
+		@include rwd(medium) {
+			font-size: 4.8rem;
+		}
+		@include rwd(large) {
+			font-size: 7.2rem;
+		}
+		
+		.single & {
+			
+			@include rwd(medium) {
+				font-size: 3.8rem;
+			}
+		}
+		
 	}
+	
+	// On pages 
+	
+	body.page & {
+		background: var(--text_color);
+		
+		.page-title {
+			color: var(--accent_color);
+		}
+		
+		@include rwd(medium) {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			margin: 0;
+			z-index: 100;
+			width: 50%;
+			height: 45rem;
+			background: transparent url(img/ui/stain-single.svg) top right no-repeat;
+			background-size: contain;
+			pointer-events: none;
+			
+			.inner {
+				height: 100%;
+				align-items: flex-end;
+			}
+			.page-title {
+				max-width: 22rem;
+				padding-top: 10rem;
+				text-align: right;
+			}
+		}
+		@include rwd(large) {
+			width: 74rem;
+			height: 65rem;
+			
+			.page-title {
+				max-width: 32rem;
+				padding-top: 20rem;
+			}
+		}
+	}	
 
 	.error404 &,
 	.page-template-pagecustom-maintenance & {
@@ -66,31 +113,46 @@
 
 .page-content {
 	
-	// Centering Blocks and content
-	
 	& > * {
 		width: 100%;
 		padding: 0 1rem;
 		@include center();
+		
+		// Padding for stain
+		
+		body:not(.home) & {
+			@include rwd(medium) {
+				padding-right: 40rem;
+			}
+			@include rwd(large) {
+				padding-right: 50rem;
+			}
+			@include rwd(wide) {
+				padding-right: 40rem;
+			}
+			@include rwd(xwide) {
+				padding-right: 30rem;
+			}	
+		}
 	}
 	
-	@include rwd(medium) {
-		& > p,
-		& > [class*="contact-form-7"],
-		& .acf-block-text--1col,
-		& #comments {
-			padding-right: 20rem;
-		}
-		
-		& > p.has-text-align-center {
-			padding-right: 10rem;
-			padding-left: 10rem;
-		}
-		
-		.has-sidebar & {
-			padding-right: 8.3333%;
-		}
-	}
+	// @include rwd(medium) {
+	// 	& > p,
+	// 	& > [class*="contact-form-7"],
+	// 	& .acf-block-text--1col,
+	// 	& #comments {
+	// 		padding-right: 20rem;
+	// 	}
+	// 	
+	// 	& > p.has-text-align-center {
+	// 		padding-right: 10rem;
+	// 		padding-left: 10rem;
+	// 	}
+	// 	
+	// 	.has-sidebar & {
+	// 		padding-right: 8.3333%;
+	// 	}
+	// }
 	
 	& > *.alignwide {
 		max-width: $max-width-large;
@@ -162,9 +224,31 @@
 
 // Scrollout Animations
 
+.bio-section[data-scroll="in"],
+.blog-section[data-scroll="in"],
+.portfolio-section[data-scroll="in"] > div {
+	
+	.wp-block-media-text__content {
+		animation: slide_up 1s ease-in-out;
+	}
+	.wp-block-media-text__media {
+		animation: slide_left 1s ease-in-out;
+	}
+}
+.portfolio-section[data-scroll="in"] > div {
+	.wp-block-columns {
+		animation: slide_up 1s ease-in-out;
+	}
+}
+
+.site-title[data-scroll="in"] svg {
+	animation: rotate_5 .5s ease-in-out;
+}
+
 hr[data-scroll="in"] {
 	animation: stretch 1s ease-in-out;
 }
+
 section[data-scroll="in"],
 .wpcf7-form {
 	animation: slide_up 1s ease-in-out;
@@ -209,4 +293,10 @@ section[data-scroll="in"],
 		}
 	}
 	
+}
+
+@include rwd(large) {
+	.site-intro-picture[data-scroll="in"] svg {
+		animation: scale_stain .5s ease-in-out;
+	}
 }
