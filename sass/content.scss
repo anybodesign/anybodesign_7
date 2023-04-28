@@ -95,6 +95,15 @@
 				padding-top: 20rem;
 			}
 		}
+		@include rwd(1800px)	{
+			width: 74rem;
+			height: 78rem;
+			
+			.page-title {
+				max-width: 36rem;
+				padding-right: 3rem;
+			}
+		}
 	}	
 
 	.error404 &,

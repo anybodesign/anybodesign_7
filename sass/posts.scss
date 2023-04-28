@@ -159,8 +159,12 @@
 	}
 	
 	@include rwd(large)	{
-		width: 74rem;
+		width: 57rem;
 		height: 65rem;
+	}
+	@include rwd(1800px)	{
+		width: 74rem;
+		height: 78rem;
 	}
 }
 
