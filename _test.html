@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Page title</title>
+	<meta name="description" content="Page description.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		body {
+			
+		}
+	</style>
+</head>
+
+<body>
+
+	<h3>Filter recepies:</h3>
+
+	<form>
+	<p>Select vegetables</p>
+	<label><input type="checkbox" class="vegetables" value="potato"> Potato</label><br>
+	<label><input type="checkbox" class="vegetables" value="onion"> Onion</label><br>
+	<label><input type="checkbox" class="vegetables" value="tomato"> Tomato</label><br>
+	</div>
+	
+	<div>
+	<p>Select seasoning</p>
+	<label><input type="checkbox" class="seasoning" value="salt"> Salt</label><br>
+	<label><input type="checkbox" class="seasoning" value="pepper"> Pepper</label><br>
+	<label><input type="checkbox" class="seasoning" value="chilli"> Chilli Flakes</label><br>
+	
+	<input id="reset" type="reset" value="View all">
+	</form>
+
+</body>
+
+<script src=" https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script>
+	
+	//location.hash = "tomato|salt";
+
+	$(document).ready(function() {
+	
+		$(".vegetables, .seasoning").on("change", function() {
+    		var hash = $(".vegetables:checked, .seasoning:checked").map(function() {
+        		return this.value;
+        	}).toArray();
+        	hash = hash.join("-");
+        	location.hash = hash;
+			// alert(hash);
+    	});
+    	
+    	if (location.hash !== "") {
+    		var hash = location.hash.substr(1).split("-");
+        	hash.forEach(function(value) {
+        		$("input[value=" + value + "]").prop("checked", true);
+        	});
+    	}
+		
+		$('#reset').on('click', function() {
+			history.pushState('', document.title, window.location.pathname);
+		});
+	});
+</script>
+
+</html>
+
+
+
+
