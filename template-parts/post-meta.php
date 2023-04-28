@@ -11,14 +11,23 @@
  */
  $comment = get_comments_number();
 ?>
-							<?php if ( $comment > 0 ) : ?>
-							<div class="post-meta">
 							
+							<div class="post-meta">
+								
+								<p class="meta-infos">
+									<?php esc_html_e( 'Posted ', 'anybodesign' ); ?>
+									<?php esc_html_e( 'on&nbsp;', 'anybodesign' ); 
+										echo the_time( get_option('date_format') ); ?>
+									<?php esc_html_e( 'in&nbsp;', 'anybodesign' ); the_category(', '); ?>
+								</p>
+								
+								<?php if ( $comment > 0 ) : ?>
 								<p class="meta-comments">
 									<a href="<?php the_permalink() ?>#comments">
 										<?php printf( _n( '%s comment', '%s comments', $comment, 'anybodesign' ), $comment ); ?>
 									</a>
 								</p>
+								<?php endif; ?>
 	    						
 							</div>
-							<?php endif; ?>
+							

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-04-28 11:03+0200\n"
-"PO-Revision-Date: 2023-04-28 11:03+0200\n"
+"POT-Creation-Date: 2023-04-28 11:49+0200\n"
+"PO-Revision-Date: 2023-04-28 11:49+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -319,7 +319,19 @@ msgstr "Page suivante"
 msgid "Previous page"
 msgstr "Page précédente"
 
+#: template-parts/post-meta.php:18
+msgid "Posted "
+msgstr "Publié "
+
 #: template-parts/post-meta.php:19
+msgid "on&nbsp;"
+msgstr "le&nbsp;"
+
+#: template-parts/post-meta.php:21
+msgid "in&nbsp;"
+msgstr "dans&nbsp;"
+
+#: template-parts/post-meta.php:27
 #, php-format
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -381,14 +393,8 @@ msgstr "Maintenance"
 #~ msgid "Restore contrast"
 #~ msgstr "Retablir le contraste"
 
-#~ msgid "on&nbsp;"
-#~ msgstr "le&nbsp;"
-
 #~ msgid "by&nbsp;"
 #~ msgstr "par&nbsp;"
-
-#~ msgid "in&nbsp;"
-#~ msgstr "dans&nbsp;"
 
 #~ msgid "Share post"
 #~ msgstr "Partager l’article"

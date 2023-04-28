@@ -57,6 +57,7 @@
 	
 	// On pages 
 	
+	body.blog &,
 	body.page & {
 		background: var(--text_color);
 		
@@ -93,6 +94,7 @@
 			.page-title {
 				max-width: 32rem;
 				padding-top: 20rem;
+				padding-right: 2rem;
 			}
 		}
 		@include rwd(1800px)	{
