@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-03-27 12:46+0200\n"
-"PO-Revision-Date: 2023-03-27 12:47+0200\n"
+"POT-Creation-Date: 2023-04-28 11:03+0200\n"
+"PO-Revision-Date: 2023-04-28 11:03+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -36,64 +36,104 @@ msgstr "On en discute ?"
 msgid "Add my comment!"
 msgstr "Ajouter mon commentaire !"
 
-#: functions.php:275 template-parts/header-nav.php:6
+#: functions.php:56
+msgid "Primary color"
+msgstr "Couleur primaire"
+
+#: functions.php:61
+msgid "Secondary color"
+msgstr "Couleur secondaire"
+
+#: functions.php:66
+msgid "Accent color"
+msgstr "Couleur d’accentuation"
+
+#: functions.php:71
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: functions.php:76
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: functions.php:81
+msgid "White"
+msgstr "Blanc"
+
+#: functions.php:90
+msgid "Small"
+msgstr "Petite"
+
+#: functions.php:95
+msgid "Regular"
+msgstr "Normale"
+
+#: functions.php:100
+msgid "Medium"
+msgstr "Moyenne"
+
+#: functions.php:105
+msgid "Large"
+msgstr "Grande"
+
+#: functions.php:364 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:276 template-parts/footer-copyright.php:11
+#: functions.php:365 template-parts/footer-copyright.php:11
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:291 template-parts/page-banner-title.php:12
+#: functions.php:380 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:379
+#: functions.php:468
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:379
+#: functions.php:468
 msgid "of "
 msgstr "de "
 
-#: functions.php:418
+#: functions.php:507
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:419
+#: functions.php:508
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:429
+#: functions.php:518
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:445
+#: functions.php:534
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:447
+#: functions.php:536
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:479
+#: functions.php:568
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:485
+#: functions.php:574
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:494
+#: functions.php:583
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:500
+#: functions.php:589
 msgid "Edit"
 msgstr "Modifier"
 
-#: functions.php:554 functions.php:555
+#: functions.php:643 functions.php:644
 msgid "Site Options"
 msgstr "Options du site"
 
@@ -178,6 +218,10 @@ msgstr "Aller à la page d'accueil"
 msgid "Menu"
 msgstr "Menu"
 
+#: template-parts/header-nav.php:19
+msgid "Scroll to content"
+msgstr "Faire défiler vers le contenu"
+
 #: template-parts/header-skiplinks.php:6
 msgid "Go to main content"
 msgstr "Aller au contenu principal"
@@ -237,6 +281,22 @@ msgid ""
 msgstr ""
 "Nous ne trouvons pas ce que vous cherchez. Essayez peut-être de faire une "
 "recherche."
+
+#: template-parts/page-banner-breadcrumbs.php:7
+msgid "Breadcrumbs"
+msgstr "Fil d’Ariane"
+
+#: template-parts/page-banner-breadcrumbs.php:13
+msgid "Posted on "
+msgstr "Publié le "
+
+#: template-parts/page-banner-breadcrumbs.php:13
+msgid " in"
+msgstr " dans"
+
+#: template-parts/page-banner-breadcrumbs.php:35
+msgid "Posted in"
+msgstr "Publié dans"
 
 #: template-parts/page-banner-title.php:10
 #, php-format
@@ -321,9 +381,6 @@ msgstr "Maintenance"
 #~ msgid "Restore contrast"
 #~ msgstr "Retablir le contraste"
 
-#~ msgid "Posted "
-#~ msgstr "Publié "
-
 #~ msgid "on&nbsp;"
 #~ msgstr "le&nbsp;"
 
@@ -386,24 +443,6 @@ msgstr "Maintenance"
 
 #~ msgid "Icon"
 #~ msgstr "Icône"
-
-#~ msgid "Primary color"
-#~ msgstr "Couleur primaire"
-
-#~ msgid "Secondary color"
-#~ msgstr "Couleur secondaire"
-
-#~ msgid "Accent color"
-#~ msgstr "Couleur d’accentuation"
-
-#~ msgid "Text color"
-#~ msgstr "Couleur du texte"
-
-#~ msgid "Background color"
-#~ msgstr "Couleur d’arrière-plan"
-
-#~ msgid "White"
-#~ msgstr "Blanc"
 
 #~ msgid "Header Options"
 #~ msgstr "Options de l'en-tête"
@@ -654,18 +693,6 @@ msgstr "Maintenance"
 #~ msgid "Choose a picture for the 404 error page. (2048 x 625 pixels max.)"
 #~ msgstr ""
 #~ "Choisissez une image pour la page d’erreur 404. (2048 x 625 pixels max.)"
-
-#~ msgid "Small"
-#~ msgstr "Petite"
-
-#~ msgid "Regular"
-#~ msgstr "Normale"
-
-#~ msgid "Medium"
-#~ msgstr "Moyenne"
-
-#~ msgid "Large"
-#~ msgstr "Grande"
 
 #~ msgid "View details"
 #~ msgstr "Voir les détails"
