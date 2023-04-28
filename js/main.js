@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
 	function scrollDown(anchorID) {
 		
 		var target = $(anchorID);
-		var targetSpeed = 1000;
+		var targetSpeed = 500;
 		var targetOffset = 90;
 		
 		$('html,body').animate({scrollTop: target.offset().top - targetOffset}, targetSpeed);
