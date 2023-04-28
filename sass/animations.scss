@@ -142,3 +142,20 @@
 		border-bottom-color: initial;
 	}
 }
+
+@keyframes rotate_5 {
+	from {
+		transform: rotate(5deg) scale(.95);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes scale_stain {
+	from {
+		transform: translateX(-86.5%) translateY(10%) scale(.8);
+	}
+	to {
+		transform: translateX(-86.5%);
+	}
+}

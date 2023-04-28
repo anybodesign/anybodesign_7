@@ -301,8 +301,8 @@ function fs_scripts_load() {
 				print '
 				<script>
 					ScrollOut({
-						targets: "section, .post-block, hr, .wpcf7-form",
-						once: true,
+						targets: "#front_page_content > div, section, .site-title, .post-block, hr, .wpcf7-form, .site-intro-picture",
+						once: false,
 					});
 				</script>
 				';
