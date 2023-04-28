@@ -122,6 +122,13 @@ li ul {
     margin-bottom: 0;
 }
 
+address {
+	font-style: normal;
+	position: relative;
+	left: 1.25rem;
+	border-left: var(--accent_color) 2px solid;
+}
+
 ::selection {
 	background-color: var(--accent_alpha40);
 	
@@ -219,13 +226,15 @@ img {
 figure {
 	position: relative;
 	margin: 0 0 1rem 0;
-	background-color: var(--accent_color);
-	
+		
 	@include img-opacity();
 	
 	a,
 	img {
 		display: block;
+	}
+	a {
+		background-color: var(--accent_color);
 	}
 	
 	// No border
