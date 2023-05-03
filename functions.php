@@ -187,14 +187,6 @@ function fs_allowed_blocks() {
 }
 add_action( 'enqueue_block_editor_assets', 'fs_allowed_blocks' );
 
-
-//	Admin style and script
-
-add_action('admin_enqueue_scripts', 'fs_acf_admin_css', 11 );
-function fs_acf_admin_css() {
-	wp_enqueue_style( 'admin-css', FS_THEME_URL . '/css/admin.css' );
-}
-
 // WordPress no bloody fullscreen
 
 if (is_admin()) {
@@ -225,6 +217,23 @@ function fs_scripts_load() {
 				true
 			);
 			
+			// Fancybox
+			
+		    wp_register_script( 
+		    	'fancybox', 
+		    	FS_THEME_URL . '/js/jquery.fancybox.min.js',
+		    	array('jquery'), 
+		    	'3.1.20', 
+		    	true
+		    );
+		    wp_register_script( 
+		    	'fancybox-fs-init', 
+		    	FS_THEME_URL . '/js/fancybox-init.js',
+		    	array('fancybox'), 
+		    	null, 
+		    	true
+		    );
+			
 			// IAS
 			
 			wp_register_script(
@@ -248,6 +257,16 @@ function fs_scripts_load() {
 				'stickynav', 
 				FS_THEME_URL . '/js/sticky-header.js', 
 				array(), 
+				FS_THEME_VERSION, 
+				true
+			);
+			
+			// Portfolio
+			
+			wp_register_script(
+				'portfolio', 
+				FS_THEME_URL . '/js/portfolio.js', 
+				array('jquery'), 
 				FS_THEME_VERSION, 
 				true
 			);
@@ -276,13 +295,26 @@ function fs_scripts_load() {
 		// Register CSS
 		// ------------------------
 			
-			// 
+			// Fancybox
+			
+			wp_register_style( 
+				'fancybox-css', 
+				FS_THEME_URL . '/css/jquery.fancybox.min.css',
+				array(), 
+				null, 
+				'screen' 
+			);
 			
 			
 		// Enqueue JS
 		// ------------------------
 			
 			wp_enqueue_script( 'jquery' );
+			
+			// Fancybox
+			
+			wp_enqueue_script( 'fancybox' );
+			wp_enqueue_script( 'fancybox-fs-init' );
 			
 			// IAS 
 			
@@ -292,6 +324,12 @@ function fs_scripts_load() {
 					wp_enqueue_script( 'ias' );
 					wp_enqueue_script( 'ias-fs-init' );
 				}
+			}
+			
+			// Portfolio
+			
+			if ( is_post_type_archive( 'projet' ) ) {
+				wp_enqueue_script( 'portfolio' );
 			}
 			
 			// Scrollout 
@@ -320,6 +358,9 @@ function fs_scripts_load() {
 			
 		// Enqueue CSS
 		// ------------------------
+			
+			// Fancybox
+			wp_enqueue_style( 'fancybox-css' );
 			
 			// Deregister Fuckin Bullshit
 			wp_dequeue_style( 'global-styles' );
@@ -510,6 +551,29 @@ function fs_custom_sizes( $sizes ) {
 }
 add_filter( 'image_size_names_choose', 'fs_custom_sizes' );
 
+// Custom loop - Portfolio
+
+function fs_showall_loop( $query ) {
+	if ( is_admin() || ! $query->is_main_query() )
+		return;
+
+	if ( is_post_type_archive( 'projet' ) ) {
+		
+		$taxquery = array(
+        	array(
+            	'taxonomy' => 'type-creation',
+				'field'    => 'slug',
+				'terms'    => 'archives',
+				'operator' => 'NOT IN'
+        	)
+    	);
+		
+		$query->set( 'posts_per_page', -1 );
+		$query->set( 'tax_query', $taxquery );
+		return;
+	}
+}
+add_action( 'pre_get_posts', 'fs_showall_loop', 1 );
 
 // Widgets
 
@@ -606,12 +670,12 @@ if( class_exists('acf') ) {
 	
 	// Custom blocks
 
-	// $my_blocks = array_diff( scandir(FS_THEME_DIR . '/blocks'), array('..', '.', '.DS_Store') );
-	// 
-	// foreach( $my_blocks as $block ) {
-	// 	include_once 'blocks/'. $block .'/'. $block .'.php';
-	// 	include_once 'blocks/'. $block .'/'. $block .'-fields.php';
-	// }	
+	$my_blocks = array_diff( scandir(FS_THEME_DIR . '/blocks'), array('..', '.', '.DS_Store') );
+	
+	foreach( $my_blocks as $block ) {
+		include_once 'blocks/'. $block .'/'. $block .'.php';
+		include_once 'blocks/'. $block .'/'. $block .'-fields.php';
+	}	
 	
 	// Front-End ACF Functions
 	
