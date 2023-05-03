@@ -12,6 +12,7 @@ wp.domReady( function() {
 		'acf/anchor',
 		'acf/advanced-list',
 		'acf/pagebanner',
+		'acf/projects',
         'core/block', // Include to show reusable blocks in the block inserter
 		'core/paragraph',
 		'core/heading',

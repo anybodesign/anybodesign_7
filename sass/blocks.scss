@@ -57,21 +57,21 @@
 	font-size: 1.3rem;
 	
 	@include rwd(large) {
-		font-size: 1.4rem;
+		//font-size: 1.4rem;
 	}
 }
 .has-regular-font-size {
 	font-size: 1.6rem;
 	
 	@include rwd(large) {
-		font-size: 1.8rem;
+		//font-size: 1.8rem;
 	}
 }
 .has-medium-font-size {
 	font-size: 2rem;
 	
 	@include rwd(large) {
-		font-size: 2.2rem;
+		//font-size: 2.2rem;
 	}
 }
 .has-large-font-size {
@@ -79,7 +79,7 @@
 	font-family: var(--font_bold);
 	
 	@include rwd(large) {
-		font-size: 2.4rem;
+		//font-size: 2.4rem;
 	}
 }
 
@@ -139,6 +139,7 @@
 
 .wp-block-columns {
 	display: block;
+	margin: 2rem 0 1rem 0;
 	
 	.wp-block-column {
 		width: 100% !important;
@@ -149,7 +150,7 @@
 		display: flex;
 		
 		.wp-block-column {
-			margin: 0 2rem;
+			margin: 0 1rem;
 			
 			&:first-child {
 				margin-left: 0;
@@ -230,6 +231,37 @@
 		}
 	}
 }
+
+// Projects
+
+.acf-block--projects {
+	padding: 2rem 0 !important;
+	
+	.acf-block-container {
+		display: flex;
+		flex-direction: row;
+		overflow: auto;
+		white-space: nowrap;
+		
+		@include rwd(medium) {
+			padding-right: 30rem;
+		}
+		@include rwd(large) {
+			padding-right: 48rem;
+		}
+	}
+	.project-block {
+		width: 16rem;
+		height: 16rem;
+		margin: 0 .5rem;
+		flex: 0 0 auto;
+		
+		figcaption {
+			white-space: normal;
+		}
+	}	
+}
+
 
 // Text 
 
