@@ -7,29 +7,35 @@
 							<nav class="breadcrumbs-nav" role="navigation" aria-label="<?php esc_attr_e('Breadcrumbs', 'anybodesign'); ?>">
 								<ul class="cat-menu">
 									
-								<?php if (is_singular('post')) { ?> 
+								<?php if ( is_singular('post') || is_category() ) { ?> 
 									
+									<?php if ( is_singular('post') ) { ?>
 									<li class="cat-item">
 										<?php esc_html_e('Posted on ','anybodesign'); the_time('d.m.Y');  esc_html_e(' in','anybodesign'); ?>
 									</li>
+									<?php } ?>
 									
 									<li class="cat-item">
 										<a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">
 											Blog
 										</a>
 									</li>
-									<?php if ( ! empty( $categories ) ) { ?>
+									<?php if ( ! empty( $categories ) && ! is_category() ) { ?>
 									<li class="cat-item">
 										<a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>">
 											<?php echo esc_html( $categories[0]->name ); ?>
 										</a>
+									</li>
+									<?php } else if ( ! empty( $categories ) && is_category() && ! is_singular('post') ) { ?>
+									<li class="cat-item">
+										<?php echo esc_html( $categories[0]->name ); ?>
 									</li>
 									<?php } ?>
 									
 								<?php } ?>
 									
 									
-								<?php if (is_singular('projet')) { ?> 
+								<?php if ( is_singular('projet') || is_tax('type-projet') ) { ?> 
 									
 									<li class="cat-item">
 										<?php esc_html_e('Posted in','anybodesign'); ?>
