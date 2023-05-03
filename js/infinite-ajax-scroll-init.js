@@ -1,5 +1,5 @@
 let ias = new InfiniteAjaxScroll('#posts_list', {
-	item: '.post-block',
+	item: '.hentry',
 	next: '.next',
 	pagination: document.getElementById('posts_nav'),
 	spinner: {
