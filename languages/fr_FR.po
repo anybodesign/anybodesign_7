@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-04-28 11:49+0200\n"
-"PO-Revision-Date: 2023-04-28 11:49+0200\n"
+"POT-Creation-Date: 2023-05-02 11:34+0200\n"
+"PO-Revision-Date: 2023-05-02 12:15+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -76,64 +76,64 @@ msgstr "Moyenne"
 msgid "Large"
 msgstr "Grande"
 
-#: functions.php:364 template-parts/header-nav.php:6
+#: functions.php:380 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:365 template-parts/footer-copyright.php:11
+#: functions.php:381 template-parts/footer-copyright.php:11
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:380 template-parts/page-banner-title.php:12
+#: functions.php:396 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:468
+#: functions.php:484
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:468
+#: functions.php:484
 msgid "of "
 msgstr "de "
 
-#: functions.php:507
+#: functions.php:523
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:508
+#: functions.php:524
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:518
+#: functions.php:548
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:534
+#: functions.php:564
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:536
+#: functions.php:566
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:568
+#: functions.php:598
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:574
+#: functions.php:604
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:583
+#: functions.php:613
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:589
+#: functions.php:619
 msgid "Edit"
 msgstr "Modifier"
 
-#: functions.php:643 functions.php:644
+#: functions.php:673 functions.php:674
 msgid "Site Options"
 msgstr "Options du site"
 
@@ -286,17 +286,46 @@ msgstr ""
 msgid "Breadcrumbs"
 msgstr "Fil d’Ariane"
 
-#: template-parts/page-banner-breadcrumbs.php:13
+#: template-parts/page-banner-breadcrumbs.php:14
 msgid "Posted on "
 msgstr "Publié le "
 
-#: template-parts/page-banner-breadcrumbs.php:13
+#: template-parts/page-banner-breadcrumbs.php:14
 msgid " in"
 msgstr " dans"
 
-#: template-parts/page-banner-breadcrumbs.php:35
+#: template-parts/page-banner-breadcrumbs.php:41
 msgid "Posted in"
 msgstr "Publié dans"
+
+#: template-parts/page-banner-filters.php:5
+msgid "Posts filters"
+msgstr "Filtres des publications"
+
+#: template-parts/page-banner-filters.php:8
+msgid "Categories:"
+msgstr "Catégories :"
+
+#: template-parts/page-banner-filters.php:20
+msgid "Project type:"
+msgstr "Type de projet :"
+
+#: template-parts/page-banner-filters.php:26
+msgid "All"
+msgstr "Tout"
+
+#: template-parts/page-banner-filters.php:32
+msgid "Graphic design"
+msgstr "Graphisme"
+
+#: template-parts/page-banner-filters.php:38
+#| msgid "Anybodesign"
+msgid "Web design"
+msgstr "Web design"
+
+#: template-parts/page-banner-filters.php:44
+msgid "Motion design"
+msgstr "Animation"
 
 #: template-parts/page-banner-title.php:10
 #, php-format
@@ -319,19 +348,19 @@ msgstr "Page suivante"
 msgid "Previous page"
 msgstr "Page précédente"
 
-#: template-parts/post-meta.php:18
+#: template-parts/post-meta.php:19
 msgid "Posted "
 msgstr "Publié "
 
-#: template-parts/post-meta.php:19
+#: template-parts/post-meta.php:20
 msgid "on&nbsp;"
 msgstr "le&nbsp;"
 
-#: template-parts/post-meta.php:21
-msgid "in&nbsp;"
-msgstr "dans&nbsp;"
+#: template-parts/post-meta.php:24
+msgid "&nbsp;in&nbsp;"
+msgstr "&nbsp;dans&nbsp;"
 
-#: template-parts/post-meta.php:27
+#: template-parts/post-meta.php:32
 #, php-format
 msgid "%s comment"
 msgid_plural "%s comments"
@@ -371,9 +400,6 @@ msgstr "Maintenance"
 
 #~ msgid "Secondary navigation"
 #~ msgstr "Navigation secondaire"
-
-#~ msgid "Categories"
-#~ msgstr "Catégories"
 
 #~ msgid "All categories"
 #~ msgstr "Toutes les catégories"
@@ -871,10 +897,6 @@ msgstr "Maintenance"
 #~ msgctxt "Taxonomy General Name"
 #~ msgid "Project types"
 #~ msgstr "Types de projets"
-
-#~ msgctxt "Taxonomy Singular Name"
-#~ msgid "Project type"
-#~ msgstr "Type de projet"
 
 #~ msgid "Project types"
 #~ msgstr "Types de projets"
