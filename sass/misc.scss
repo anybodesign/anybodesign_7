@@ -2,7 +2,73 @@
 /* = Plugins
 /* ------------------------- */
 
-// Slider
+// Fancybox
+
+.fancybox-navigation {
+	
+	.fancybox-button {
+		display: block;
+		background: transparent;
+		padding: .5rem;
+		width: 4.4rem; 
+		height: 4.4rem;
+		
+		&[disabled] {
+			opacity: .2;
+			pointer-events: none;
+		}
+		
+		&:hover,
+		&:focus {
+			
+			div {
+				background-color: var(--accent_color);
+				
+				path {
+					fill: var(--text_color);
+				}
+			}
+		}
+		
+		div {
+			border: var(--text_color) 2px solid;
+			background: var(--text_color);
+			border-radius: 50%;
+		}
+	}
+}
+.fancybox-toolbar {
+	.fancybox-button--close {
+		padding: 1rem;
+		margin: 1rem;
+		background: var(--text_color);
+		border-radius: 50%;
+		border: var(--text_color) 2px solid;
+		
+		&:hover,
+		&:focus {
+			background-color: var(--accent_color);
+				
+			path {
+				fill: var(--text_color);
+			}
+		}
+	}
+}
+.fancybox-bg {
+	background: #fff;
+	backdrop-filter: blur(1.4rem);
+}
+
+.fancybox-slide {
+	.fancybox-content {
+		img {
+			box-shadow: 0 0 3.6rem rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+	
+	
 
 
 /* ------------------------- */
