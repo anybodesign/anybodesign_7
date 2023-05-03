@@ -7,13 +7,13 @@
 		transform: translateY(-100%);
 	}
 	50% {
-		transform: translateY(0);
+		transform: none;
 	}
 	75% {
 		transform: translateY(-10%);
 	}
 	100% {
-		transform: translateY(0);
+		transform: none;
 	}
 }
 
@@ -157,5 +157,22 @@
 	}
 	to {
 		transform: translateX(-86.5%);
+	}
+}
+
+@keyframes ghost_in {
+	from {
+		transform: scale(0);
+		opacity: 0;
+		height: 0;
+		width: 0;
+		position: absolute;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+		height: auto;
+		width: auto;
+		position: relative;
 	}
 }

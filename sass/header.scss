@@ -175,24 +175,21 @@
 			padding-right: 2.5rem;
 			justify-content: flex-end;
 			background-color: rgba(255, 255, 255, 0.75);
-			backdrop-filter: blur(.8rem);
-			//box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.20);
-			//border-bottom: #c0c0c0 1px dotted;
+			backdrop-filter: blur(.8rem);			
 		}
 		
 		.scroll-down {
 			display: none;
 		}
-		
+	}
+	
+	@include rwd($admin-bar) {
 		&.admin-bar {
 			
-			#site_head {
-				top: 46px;
-				
-				@include rwd($admin-bar) {
-					top: 32px;
-				}
+			.main-menu,
+			.site-brand {
+				top: 3.2rem;
 			}
 		}
-	}
+	}	
 }

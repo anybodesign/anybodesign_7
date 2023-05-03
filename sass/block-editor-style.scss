@@ -117,18 +117,19 @@ html.interface-interface-skeleton__html-container {
 	.wp-block-media-text {
 		position: relative;
 		padding: 1.5rem;
-		border: #515151 1px solid;
+		border: #999 1px solid;
 		
 		&::before {
 			display: block;
 			position: absolute;
 			bottom: -1px;
 			left: -1px;
-			background: #515151;
-			color: #FFF;
+			background: #666;
+			color: #fff;
 			font-size: .85rem;
 			text-transform: uppercase;
 			padding: 0 .5rem;
+			opacity: .5;
 		}
 	}
 	.wp-block-columns {
