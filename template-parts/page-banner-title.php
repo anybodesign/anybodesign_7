@@ -15,3 +15,8 @@
 								}
 							?>
 						</h1>
+						<?php if ( is_archive() ) { ?>
+						<div class="archive-desc">
+							<?php the_archive_description(); ?>
+						</div>
+						<?php } ?>

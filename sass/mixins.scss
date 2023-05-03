@@ -22,6 +22,16 @@
 	}	
 }
 
+// Portfolio visibility
+
+@mixin ghost() {
+	transform: scale(0);
+	opacity: 0;
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+
 // Link Style
 
 @mixin link-style($bg: dark) {

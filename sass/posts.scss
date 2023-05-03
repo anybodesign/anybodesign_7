@@ -59,6 +59,66 @@
 	
 }
 
+// Projects
+
+.project-block {
+	
+	a {
+		display: block;
+		margin: 0;
+		
+		&:hover,
+		&:focus {
+			figcaption {
+				opacity: 1;
+				filter: none;
+				
+				.post-title {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+	
+	figure {
+		position: relative;
+		display: block;
+		margin: 0;
+		
+		img {
+			display: block;
+		}
+		
+		figcaption {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			filter: blur(.4rem);
+			transition: .2s ease-in-out;
+			background-color: rgba(0, 0, 0, 0.86);
+			
+			.post-title {
+				font-family: var(--font_regular);
+				font-size: 1.4rem;
+				font-weight: normal;
+				color: #fff;
+				text-align: center;
+				letter-spacing: 0;
+				transition: .3s ease-in-out;
+				padding-top: 1rem;
+			}
+		}	
+	}
+}
+
 
 /* ------------------------- */
 /* = Archives
@@ -67,7 +127,42 @@
 .the-posts {
 	
 }
-
+.the-projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	
+	.project-block {
+		//animation: ghost_in linear .3s;
+		transition: transform .3s ease-in-out;
+		width: calc( 50% - 1rem );
+		
+		@include rwd(small) {
+			width: calc( 33.3333% - 1rem );
+		}
+	}
+}
+.page-wrap.graphisme {
+	
+	.project-block.type-creation-web-design,
+	.project-block.type-creation-motion-design {
+		@include ghost();
+	}
+}
+.page-wrap.web-design {
+	
+	.project-block.type-creation-graphisme,
+	.project-block.type-creation-motion-design {
+		@include ghost();
+	}
+}
+.page-wrap.motion-design {
+	
+	.project-block.type-creation-graphisme,
+	.project-block.type-creation-web-design {
+		@include ghost();
+	}
+}
 
 	
 
@@ -137,14 +232,10 @@
 	text-align: center;
 	padding: 2rem 0;
 
-	svg {
-		display: inline-block;
-		width: 4.4rem;
-		height: 4.4rem;
-		
-		circle {
-			fill: var(--text_color);
-		}
+	img {
+		border: 0;
+		width: 5rem;
+		height: 5rem;
 	}
 }
 .no-more {

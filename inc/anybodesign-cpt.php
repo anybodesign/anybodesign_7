@@ -58,7 +58,7 @@ class AD_CPT {
 			'show_in_admin_bar'     => true,
 			'show_in_nav_menus'     => true,
 			'can_export'            => true,
-			'has_archive'           => 'portfolio',
+			'has_archive'           => 'portfolio-anybodesign',
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
 			'rewrite'               => $rewrite,
@@ -111,7 +111,7 @@ class AD_CPT {
 			'show_in_rest'               => true,
 			'rewrite'                    => array( 'slug' => 'creations' ),
 		);
-		register_taxonomy( 'type-creation', array( 'portfolio' ), $args );
+		register_taxonomy( 'type-creation', array( 'projet' ), $args );
 		
 	}
 	

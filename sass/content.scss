@@ -57,12 +57,21 @@
 	
 	// On pages 
 	
+	body.archive &,
 	body.blog &,
 	body.page & {
 		background: var(--text_color);
 		
 		.page-title {
 			color: var(--accent_color);
+		}
+		.archive-desc {
+			margin-top: .75rem;
+			
+			p {
+				color: #fff;
+				margin-bottom: 0;
+			}
 		}
 		
 		@include rwd(medium) {
@@ -86,6 +95,13 @@
 				padding-top: 10rem;
 				text-align: right;
 			}
+			.archive-desc {
+				max-width: 22rem;
+				
+				p {
+					text-align: right;
+				}
+			}
 		}
 		@include rwd(large) {
 			width: 74rem;
@@ -96,6 +112,9 @@
 				padding-top: 20rem;
 				padding-right: 2rem;
 			}
+			.archive-desc {
+				max-width: 32rem;
+			}
 		}
 		@include rwd(1800px)	{
 			width: 74rem;
@@ -104,6 +123,9 @@
 			.page-title {
 				max-width: 36rem;
 				padding-right: 3rem;
+			}
+			.archive-desc {
+				max-width: 36rem;
 			}
 		}
 	}	
