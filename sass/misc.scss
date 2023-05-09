@@ -57,9 +57,10 @@
 }
 .fancybox-bg {
 	background: #fff;
-	backdrop-filter: blur(1.4rem);
 }
-
+.fancybox-container {
+	backdrop-filter: blur(.8rem);
+}
 .fancybox-slide {
 	.fancybox-content {
 		img {
