@@ -271,16 +271,6 @@ function fs_scripts_load() {
 				true
 			);
 			
-			// VideoJS
-			
-			wp_register_script( 
-				'videojs', 
-				get_template_directory_uri() . '/js/video.min.js',
-				array(), 
-				'8.3.0', 
-				true
-			);
-			
 			// Other stuff
 			
 			wp_register_script(
@@ -315,16 +305,6 @@ function fs_scripts_load() {
 				'screen' 
 			);
 			
-			// VideoJS
-			
-			wp_register_style( 
-				'videojs-css', 
-				get_template_directory_uri() . '/css/video-js.css',
-				array(), 
-				'8.3.0', 
-				true
-			);
-			
 			
 		// Enqueue JS
 		// ------------------------
@@ -350,10 +330,6 @@ function fs_scripts_load() {
 			
 			if ( is_post_type_archive( 'projet' ) ) {
 				wp_enqueue_script( 'portfolio' );
-			}
-			
-			if ( has_term('motion-design', 'type-creation') || has_term('archives','type-creation') ) {
-				wp_enqueue_script( 'video-js' );
 			}
 			
 			// Scrollout 
@@ -385,10 +361,6 @@ function fs_scripts_load() {
 			
 			// Fancybox
 			wp_enqueue_style( 'fancybox-css' );
-			
-			if ( has_term('motion-design', 'type-creation') || has_term('archives','type-creation') ) {
-				wp_enqueue_style( 'video-js-css' );
-			}
 			
 			// Deregister Fuckin Bullshit
 			wp_dequeue_style( 'global-styles' );

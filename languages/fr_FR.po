@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-05-02 11:34+0200\n"
-"PO-Revision-Date: 2023-05-02 12:15+0200\n"
+"POT-Creation-Date: 2023-05-09 12:55+0200\n"
+"PO-Revision-Date: 2023-05-09 12:55+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -19,6 +19,32 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: blocks/block-projects/block-projects-fields.php:9
+msgid "Block Custom"
+msgstr "Block Custom"
+
+#: blocks/block-projects/block-projects-fields.php:13
+msgid "Field"
+msgstr "Champ"
+
+#: blocks/block-projects/block-projects.php:14
+msgid "Projects"
+msgstr "Projets"
+
+#: blocks/block-videojs/block-videojs.php:14
+msgid "Video JS Player"
+msgstr "Video JS Player"
+
+#: blocks/block-videojs/templates/block-videojs-tpl.php:18
+msgid ""
+"To view this video please enable JavaScript, and consider upgrading to a web "
+"browser that <a href=\"https://videojs.com/html5-video-support/\" target="
+"\"_blank\">supports HTML5 video"
+msgstr ""
+"Pour visionner cette vidéo, veuillez activer JavaScript et envisager de "
+"passer à un navigateur Web prenant <a href=\"https://videojs.com/html5-video-"
+"support/\" target=\"_blank\">en charge la vidéo HTML5</a>"
 
 #: comments.php:19
 msgid "They talk about it"
@@ -76,64 +102,64 @@ msgstr "Moyenne"
 msgid "Large"
 msgstr "Grande"
 
-#: functions.php:380 template-parts/header-nav.php:6
+#: functions.php:433 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:381 template-parts/footer-copyright.php:11
+#: functions.php:434 template-parts/footer-copyright.php:11
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:396 template-parts/page-banner-title.php:12
+#: functions.php:449 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:484
+#: functions.php:537
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:484
+#: functions.php:537
 msgid "of "
 msgstr "de "
 
-#: functions.php:523
+#: functions.php:576
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:524
+#: functions.php:577
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:548
+#: functions.php:610
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:564
+#: functions.php:626
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:566
+#: functions.php:628
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:598
+#: functions.php:660
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:604
+#: functions.php:666
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:613
+#: functions.php:675
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:619
+#: functions.php:681
 msgid "Edit"
 msgstr "Modifier"
 
-#: functions.php:673 functions.php:674
+#: functions.php:735 functions.php:736
 msgid "Site Options"
 msgstr "Options du site"
 
@@ -319,7 +345,6 @@ msgid "Graphic design"
 msgstr "Graphisme"
 
 #: template-parts/page-banner-filters.php:38
-#| msgid "Anybodesign"
 msgid "Web design"
 msgstr "Web design"
 
@@ -787,12 +812,6 @@ msgstr "Maintenance"
 #~ msgid "L"
 #~ msgstr "L"
 
-#~ msgid "Block Custom"
-#~ msgstr "Block Custom"
-
-#~ msgid "Field"
-#~ msgstr "Champ"
-
 #~ msgid "Block"
 #~ msgstr "Bloc"
 
@@ -812,9 +831,6 @@ msgstr "Maintenance"
 #~ msgctxt "Post Type Singular Name"
 #~ msgid "Project"
 #~ msgstr "Projet"
-
-#~ msgid "Projects"
-#~ msgstr "Projets"
 
 #~ msgid "Item Archives"
 #~ msgstr "Archives de l'élément"
