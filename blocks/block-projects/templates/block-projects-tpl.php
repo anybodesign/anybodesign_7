@@ -3,6 +3,10 @@
 	$projects = get_field('projects');
 
 ?>
+			<?php // Block preview
+				if( !empty( $block['data']['__is_preview'] ) ) { ?>
+				<img src="<?php echo FS_THEME_URL . '/blocks/block-projects/assets/preview.jpg'; ?>" alt="">
+			<?php } else { ?>
 			<section class="acf-block--projects alignfull">
 				<div class="acf-block-container">
 					<?php if ( $projects ) {
@@ -32,3 +36,4 @@
 					<?php } ?>
 				</div>
 			</section>
+			<?php } ?>

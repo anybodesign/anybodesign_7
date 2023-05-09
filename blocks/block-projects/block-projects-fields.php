@@ -1,6 +1,6 @@
 <?php defined('ABSPATH') or die(); 
 
-function custom_block_fields() {
+function projects_block_fields() {
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -50,4 +50,4 @@ acf_add_local_field_group(array(
 endif;
 
 }
-add_action('acf/init', 'custom_block_fields');
+add_action('acf/init', 'projects_block_fields');
