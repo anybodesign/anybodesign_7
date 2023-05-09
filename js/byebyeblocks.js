@@ -1,18 +1,21 @@
 wp.domReady( function() {
 
 	var allowedBlocks = [
-	    'acf/gallery',	// ACF blocks
-		'acf/posts',
-		'acf/cta',
-		'acf/cards',
-		'acf/files',
-		'acf/testimonial',
-		'acf/textimg',
-		'acf/text',
-		'acf/anchor',
-		'acf/advanced-list',
-		'acf/pagebanner',
+	    //'acf/gallery',	// ACF blocks
+		//'acf/posts',
+		//'acf/cta',
+		//'acf/cards',
+		//'acf/files',
+		//'acf/testimonial',
+		//'acf/textimg',
+		//'acf/text',
+		//'acf/anchor',
+		//'acf/advanced-list',
+		//'acf/pagebanner',
+		
 		'acf/projects',
+		'acf/videojs',
+		
         'core/block', // Include to show reusable blocks in the block inserter
 		'core/paragraph',
 		'core/heading',
@@ -27,6 +30,7 @@ wp.domReady( function() {
 		'core/columns',
 		'core/embed',
 		'core/file',
+		'core/gallery',
 		'core/group',
 		'core/more',
 		'core/shortcode',
@@ -44,7 +48,8 @@ wp.domReady( function() {
 		'core/text-columns',
 		'core/preformatted',
 		'gravityforms/form', // Gravity & plugins
-		'contact-form-7/contact-form-selector', // CF7		
+		'contact-form-7/contact-form-selector', // CF7
+		'wab/pastacode',		
 	];
 	
 	const allowedEmbedBlocks = [
@@ -54,7 +59,7 @@ wp.domReady( function() {
 	
 	wp.blocks.getBlockTypes().forEach( function ( blockType ) {
 	    if ( allowedBlocks.indexOf( blockType.name ) === -1 ) {
-	        wp.blocks.unregisterBlockType( blockType.name );
+	       wp.blocks.unregisterBlockType( blockType.name );
 	    }
 	} );
 
