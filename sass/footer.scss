@@ -8,10 +8,6 @@ hr.pre-footer.is-style-dots {
 	margin-bottom: 3rem;
 	
 	@include rwd(large) {
-		margin: 5rem auto;
-		width: 50%;
-	}
-	@include rwd(wide) {
 		margin: 5rem 0;
 		width: calc( (100% - #{$max-width}) );
 	}

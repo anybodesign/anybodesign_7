@@ -350,11 +350,12 @@ hr,
 			overflow: visible;
 			
 			@include rwd(medium) {
-				width: 50%;
+				padding-right: 0 !important;
 			}
-			@include rwd(wide) {
+			@include rwd(large) {
+				margin: 5rem 0;
 				width: calc( (100% - #{$max-width}) );
-				max-width: 50rem;
+				max-width: none;
 			}
 			
 			&::before {
