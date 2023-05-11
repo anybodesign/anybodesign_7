@@ -3,35 +3,13 @@
     "title": "Informations de la vidéo",
     "fields": [
         {
-            "key": "field_55f74ad498b00",
-            "label": "Identifiant vidéo",
-            "name": "video-js",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "Le nom du fichier vidéo sans l'extension.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
             "key": "field_55fc1b5ba11a8",
             "label": "Url de base",
             "name": "video-url",
             "aria-label": "",
             "type": "url",
             "instructions": "URL de base du serveur vidéo",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -40,6 +18,26 @@
             },
             "default_value": "https:\/\/motion.anybodesign.com",
             "placeholder": "https:\/\/motion.anybodesign.wp"
+        },
+        {
+            "key": "field_55f74ad498b00",
+            "label": "Identifiant vidéo",
+            "name": "video-js",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Le nom du fichier vidéo sans l'extension.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -72,5 +70,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683625759
+    "modified": 1683631090
 }
