@@ -14,6 +14,6 @@ jQuery(document).ready(function($) {
 	});
 	
 	//$('.page-wrap').find("a:has(img)").attr('data-fancybox', '');
-	$('.page-wrap').find('figure a:has(img)').addClass('fancypop');
+	$('body:not(.home) .page-wrap').find('figure a:has(img)').addClass('fancypop');
 	
 });
