@@ -551,6 +551,7 @@ function fs_custom_sizes( $sizes ) {
 }
 add_filter( 'image_size_names_choose', 'fs_custom_sizes' );
 
+
 // Custom loop - Portfolio
 
 function fs_showall_loop( $query ) {
@@ -574,6 +575,7 @@ function fs_showall_loop( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'fs_showall_loop', 1 );
+
 
 // Widgets
 

@@ -51,6 +51,9 @@
 			@include rwd(medium) {
 				font-size: 3.8rem;
 			}
+			@include rwd(large) {
+				font-size: 4.8rem;
+			}
 		}
 		
 	}

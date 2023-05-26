@@ -4,13 +4,25 @@
 
 .post-block {
 	position: relative;
-	display: flex;
 	margin-bottom: 4rem;
 	padding-bottom: 2rem;
 	border-bottom: var(--third_color) 1px dotted;
+	
+	@include rwd(small) {
+		display: flex;
+		
+		.post-figure {
+			width: 30%;
+			margin-bottom: 0;
+		}
+		.post-content {
+			width: 70%;
+			padding-left: 1.6rem;
+		}
+	}
 }
 .post-figure {
-	width: 30%;
+	margin-bottom: 1.5rem;
 	
 	a, img {
 		display: block;
@@ -18,11 +30,8 @@
 	@include img-opacity();
 }
 .post-header {
-	
 }
 .post-content {
-	width: 70%;
-	padding-left: 1.6rem;
 }
 .post-title {
 	font-size: 2.8rem;
