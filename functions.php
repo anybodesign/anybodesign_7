@@ -339,7 +339,7 @@ function fs_scripts_load() {
 				print '
 				<script>
 					ScrollOut({
-						targets: "#front_page_content > div, section, .site-title, .post-block, hr, .wpcf7-form, .site-intro-picture",
+						targets: "#front_page_content > div, section, .site-title, .post-block, hr, .wpcf7-form, .site-intro-picture, .icon-title",
 						once: false,
 					});
 				</script>

@@ -338,3 +338,9 @@ section[data-scroll="in"],
 		animation: scale_stain .5s ease-in-out;
 	}
 }
+
+@include rwd(large) {
+	.icon-title[data-scroll="in"] img {
+		animation: drop_in .5s ease-in-out;
+	}
+}

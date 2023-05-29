@@ -136,6 +136,20 @@
 			padding: 1rem;
 		}
 	}
+	
+	.single-projet & {
+		
+		.wp-block-image {
+			margin: 0 0 2rem 0;
+		}
+		.wp-block-columns {
+			margin: 0;
+		}
+		
+		& + p {
+			margin-top: 0;
+		}
+	}
 }
 
 
@@ -292,6 +306,21 @@
 			white-space: normal;
 		}
 	}	
+}
+
+// Titles + Icon
+
+.wp-block-columns.icon-title {
+	margin-top: 3rem;
+	
+	.wp-block-column:first-child {
+		display: none;
+		
+		@include rwd(large) {
+			display: block;
+			margin-left: -5.6rem;
+		}
+	}
 }
 
 
