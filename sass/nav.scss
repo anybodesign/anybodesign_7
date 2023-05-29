@@ -195,7 +195,9 @@
 		& > a:hover, 
 		& > a:focus,
 		&.current-menu-item > a,
-		&.current_page_parent > a {
+		&.current_page_parent > a,
+		.single-projet.web-design & > a[href*="web-design"],
+		.single-projet.graphisme & > a[href*="graphisme"] {
 			background-color: #fff;
 			
 			svg.menu-item-star,
@@ -211,6 +213,8 @@
 		&.current-menu-item > a,
 		&.current_page_parent > a {
 		}
+		
+		
 		
 	}
 }

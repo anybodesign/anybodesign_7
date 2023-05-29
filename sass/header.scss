@@ -146,9 +146,9 @@
 		}
 		
 		.site-brand {
-			position: fixed;
-			left: 0;
-			top: 0rem;
+			//position: fixed;
+			left: -2.5rem;
+			top: 0;
 			z-index: 150;
 			
 			svg {
@@ -172,7 +172,7 @@
 			top: 0;
 			width: 100%;
 			padding: 2.5rem 0;
-			padding-right: 2.5rem;
+			padding-right: $half-space-sans;
 			justify-content: flex-end;
 			background-color: rgba(255, 255, 255, 0.75);
 			backdrop-filter: blur(.8rem);			
