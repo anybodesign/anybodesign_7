@@ -33,10 +33,7 @@ html.interface-interface-skeleton__html-container {
 
 // Layout 
 
-.wp-block {
-	max-width: 996px;
-	margin-bottom: 4rem;
-}
+
 .edit-post-layout__metaboxes:not(:empty) {
 	width: 100%;
 	max-width: 960px;
@@ -70,6 +67,11 @@ html.interface-interface-skeleton__html-container {
 	//@import 'posts.scss';	
 	//@import 'blocks.scss';
 	//@import 'forms-custom.scss';
+
+	.wp-block {
+		max-width: 996px;
+		margin-bottom: 4rem;
+	}
 
 	h1, h2, h3, h4, h5, h6,
 	.h1-like, .h2-like, .h3-like, .h4-like, .h5-like, .h6-like {
@@ -154,5 +156,12 @@ html.interface-interface-skeleton__html-container {
 	
 	.wp-block-separator {
 		padding-top: 2rem;
+	}
+	
+	.wp-block-quote {
+		p {
+			//font-size: 1.6rem;
+			font-family: var(--font_hand);
+		}
 	}	
 }
