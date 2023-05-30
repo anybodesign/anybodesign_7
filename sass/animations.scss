@@ -159,6 +159,14 @@
 		transform: translateX(-86.5%);
 	}
 }
+@keyframes scale_stain_inter {
+	from {
+		transform: translateX(-92.6%) translateY(8%) scale(.85);
+	}
+	to {
+		transform: translateX(-92.6%);
+	}
+}
 
 @keyframes ghost_in {
 	from {

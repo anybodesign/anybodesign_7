@@ -129,9 +129,33 @@
 				height: 50rem;
 				transform: translateX(-86.5%);
 			}
-		}
+		}	
 	}
-}	
+}
+
+
+// Intermediate laptops
+	
+@media (max-height: 750px) and (min-width: 996px) {
+	
+	.site-intro .site-intro-picture svg {
+		width: 92rem;
+		height: 65rem;
+		transform: translateX(-92.6%);
+	}
+	.site-intro .site-intro-content {
+		padding-bottom: 1rem;
+	}
+	
+	.home:not(.sticky-nav) .main-menu {
+		padding-top: 3rem;
+	}
+	
+	.site-intro-picture[data-scroll="in"] svg {
+		animation: scale_stain_inter .5s ease-in-out;
+	}
+}
+	
 
 .scroll-down {
 	display: none;
@@ -345,4 +369,11 @@
 
 .blog-section {
 	
+	.wp-block-media-text__media {
+		@include rwd(large) {
+			a {
+				display: inline-block;
+			}
+		}
+	}
 }
