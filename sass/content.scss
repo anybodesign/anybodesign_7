@@ -32,7 +32,11 @@
 		flex-direction: column;
 		justify-content: center;
 		padding: 1rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
+		
+		@include rwd(large) {
+			margin-bottom: 2rem;
+		}
 	}
 	
 	.page-title {
@@ -60,6 +64,7 @@
 	
 	// On pages 
 	
+	body.search &,
 	body.archive &,
 	body.blog &,
 	body.page & {
@@ -145,7 +150,7 @@
 .page-title {
 	
 	.search-term {
-		font-family: var(--font_bolditalic);
+		color: #fff;
 	}
 }
 

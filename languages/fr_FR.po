@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Anybodesign\n"
-"POT-Creation-Date: 2023-05-09 12:55+0200\n"
-"PO-Revision-Date: 2023-05-09 12:55+0200\n"
+"POT-Creation-Date: 2023-05-30 22:33+0200\n"
+"PO-Revision-Date: 2023-05-30 22:33+0200\n"
 "Last-Translator: Thomas Villain <atelier@anybodesign.com>\n"
 "Language-Team: Thomas Villain <atelier@anybodesign.com>\n"
 "Language: fr_FR\n"
@@ -102,64 +102,64 @@ msgstr "Moyenne"
 msgid "Large"
 msgstr "Grande"
 
-#: functions.php:433 template-parts/header-nav.php:6
+#: functions.php:405 template-parts/header-nav.php:6
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: functions.php:434 template-parts/footer-copyright.php:11
+#: functions.php:406 template-parts/footer-copyright.php:11
 msgid "Footer Menu"
 msgstr "Menu pied de page"
 
-#: functions.php:449 template-parts/page-banner-title.php:12
+#: functions.php:421 template-parts/page-banner-title.php:12
 msgid "Oops! That page can&rsquo;t be found"
 msgstr "Oops! Page introuvable"
 
-#: functions.php:537
+#: functions.php:509
 msgid "Read More"
 msgstr "Lire la suite"
 
-#: functions.php:537
+#: functions.php:509
 msgid "of "
 msgstr "de "
 
-#: functions.php:576
+#: functions.php:548
 msgid "Screen Medium"
 msgstr "Écran moyen"
 
-#: functions.php:577
+#: functions.php:549
 msgid "Screen Full"
 msgstr "Plein écran"
 
-#: functions.php:610
+#: functions.php:584
 msgid "Blog Widgets"
 msgstr "Widget du blog"
 
-#: functions.php:626
+#: functions.php:600
 msgid "Search for:"
 msgstr "Rechercher :"
 
-#: functions.php:628
+#: functions.php:602
 msgid "Search"
 msgstr "Chercher"
 
-#: functions.php:660
+#: functions.php:634
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s à %2$s"
 
-#: functions.php:666
+#: functions.php:640
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions.php:675
+#: functions.php:649
 msgid "Reply"
 msgstr "Répondre"
 
-#: functions.php:681
+#: functions.php:655
 msgid "Edit"
 msgstr "Modifier"
 
-#: functions.php:735 functions.php:736
+#: functions.php:709 functions.php:710
 msgid "Site Options"
 msgstr "Options du site"
 
@@ -354,8 +354,8 @@ msgstr "Animation"
 
 #: template-parts/page-banner-title.php:10
 #, php-format
-msgid "Search Results for: %s"
-msgstr "Résultats de la recherche pour : %s"
+msgid "Your search results for: %s"
+msgstr "Votre recherche pour : %s"
 
 #: template-parts/page-content.php:21 template-parts/post-pagination.php:24
 msgid "Page"
