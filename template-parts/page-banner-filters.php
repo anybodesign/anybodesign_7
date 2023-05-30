@@ -33,13 +33,13 @@
 										</label>
 									</li>
 									<li class="portfolio-checkbox">
-										<input type="radio" id="web" name="portfolio" class="portfolio" value="web-design">
+										<input type="radio" id="web" name="portfolio" class="portfolio" value="wordpress">
 										<label for="web">
 											<?php esc_html_e('Web design','anybodesign'); ?>
 										</label>
 									</li>
 									<li class="portfolio-checkbox">
-										<input type="radio" id="motion" name="portfolio" class="portfolio" value="motion-design">
+										<input type="radio" id="motion" name="portfolio" class="portfolio" value="animation">
 										<label for="motion">
 											<?php esc_html_e('Motion design','anybodesign'); ?>
 										</label>

@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     	hash = hash.join("-");
     	location.hash = hash;
 		// alert(hash);
-		parent.removeClass('graphisme').removeClass('web-design').removeClass('motion-design');
+		parent.removeClass('graphisme').removeClass('wordpress').removeClass('animation');
 		parent.addClass(this.value);
 	});
 	
@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
 	
 	$('#reset').on('click', function() {
 		history.pushState('', document.title, window.location.pathname);
-		$('.page-wrap').removeClass('graphisme').removeClass('web-design').removeClass('motion-design');
+		$('.page-wrap').removeClass('graphisme').removeClass('wordpress').removeClass('animation');
 	});
 	
 });

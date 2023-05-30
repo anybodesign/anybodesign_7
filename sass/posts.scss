@@ -153,22 +153,22 @@
 }
 .page-wrap.graphisme {
 	
-	.project-block.type-creation-web-design,
-	.project-block.type-creation-motion-design {
+	.project-block.type-creation-wordpress,
+	.project-block.type-creation-animation {
 		@include ghost();
 	}
 }
-.page-wrap.web-design {
+.page-wrap.wordpress {
 	
 	.project-block.type-creation-graphisme,
-	.project-block.type-creation-motion-design {
+	.project-block.type-creation-animation {
 		@include ghost();
 	}
 }
-.page-wrap.motion-design {
+.page-wrap.animation {
 	
 	.project-block.type-creation-graphisme,
-	.project-block.type-creation-web-design {
+	.project-block.type-creation-wordpress {
 		@include ghost();
 	}
 }
