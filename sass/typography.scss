@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6,
 	letter-spacing: -.15rem;
 	line-height: 1;
 	margin: .75em 0;
+	
+	@include rwd(large) {
+		margin: .3em 0;
+	}
 
 	
 	b, strong {
@@ -276,7 +280,7 @@ blockquote {
 		height: 7rem;
 		position: absolute;
 		bottom: -1rem;
-		left: .5rem;
+		left: 1rem;
 		background: url(img/ui/quote.svg) 0 0 no-repeat;
 	}
 	
@@ -286,6 +290,29 @@ blockquote {
 		
 		@include rwd(large) {
 			padding-right: 8.3333%;
+		}
+	}
+	
+	
+	&.reverse-quote {
+		
+		&::after {
+			left: auto;
+			right: .5rem;
+			transform: scaleX(-1);
+			
+			@include rwd(medium) {
+				right: 41rem;
+			}
+			@include rwd(large) {
+				right: 49rem;
+			}
+			@include rwd(wide) {
+				right: 39rem;
+			}
+			@include rwd(xwide) {
+				right: 29rem;
+			}
 		}
 	}
 }
