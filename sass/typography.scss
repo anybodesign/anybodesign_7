@@ -125,7 +125,7 @@ li ul {
 address {
 	font-style: normal;
 	position: relative;
-	left: 1.25rem;
+	padding-left: 1.25rem !important;
 	border-left: var(--accent_color) 2px solid;
 }
 

@@ -149,6 +149,14 @@
 		& + p {
 			margin-top: 0;
 		}
+		
+	}
+}
+.single-projet {
+	
+	p + .wp-block-group,
+	p + .wp-block-image {
+		margin-top: 2rem;
 	}
 }
 
