@@ -158,26 +158,29 @@
 	
 
 .scroll-down {
-	display: none;
+	display: block;
+	position: absolute;
+	top: 22rem;
+	right: 50%;
+	margin-right: -2.45rem;
+	padding: 0;
+	background: transparent;
+	z-index: 910;
+	
+	&:hover,
+	&:focus {
+		animation: pop_in .2s ease-in-out;
+	}
+	
+	svg {
+		width: 4.9rem;
+		height: 3.8rem;
+	}
 	
 	@include rwd(large) {
-		display: block;
-		position: absolute;
+		top: auto;
 		bottom: -6rem;
 		right: 15rem;
-		padding: 0;
-		background: transparent;
-		z-index: 200;
-		
-		&:hover,
-		&:focus {
-			animation: pop_in .2s ease-in-out;
-		}
-		
-		svg {
-			width: 4.9rem;
-			height: 3.8rem;
-		}
 	}
 }
 
