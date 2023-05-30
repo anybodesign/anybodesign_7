@@ -254,7 +254,14 @@
 		
 		& > .wp-block-heading {
 			padding: 0 2rem;
-			margin-bottom: 2rem;
+			margin: 0;
+			text-align: center;
+			
+			@include rwd(large) {
+				padding: 0;
+				margin-bottom: 2rem;
+				text-align: right;
+			}
 		}
 	}
 		
@@ -285,6 +292,7 @@
 		display: flex;
 		padding: 1rem;
 		padding-bottom: 0;
+		margin-top: 0;
 		
 		@include rwd(medium) {
 			justify-content: center;
@@ -370,6 +378,7 @@
 	}
 }
 
+.bio-section,
 .blog-section {
 	
 	.wp-block-media-text__media {
