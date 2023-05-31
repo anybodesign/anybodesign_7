@@ -165,7 +165,7 @@
 	margin-right: -2.45rem;
 	padding: 0;
 	background: transparent;
-	z-index: 910;
+	z-index: 90;
 	
 	&:hover,
 	&:focus {
@@ -181,6 +181,7 @@
 		top: auto;
 		bottom: -6rem;
 		right: 15rem;
+		z-index: 200;
 	}
 }
 
