@@ -110,7 +110,7 @@ jQuery(document).ready(function($) {
 			
 			if($(this).is("[src*=youtube], [src*=vimeo]")) {
 				var yt_width = $(this).width();
-				$( this ).attr('style','height: '+yt_width/1.77+'px');
+				$( this ).attr('style','height: '+yt_width/1.6+'px');
 			}
 		});
 	}
